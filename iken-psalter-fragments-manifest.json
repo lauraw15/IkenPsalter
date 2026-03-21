@@ -730,11 +730,11 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "provider": [
     {
-      "id": "https://www.wikidata.org/wiki/Q2583293",
+      "id": "https://github.com/lauraw15/IkenPsalter",
       "type": "Agent",
       "label": {
         "en": [
-          "Yale University Library"
+          "Yale University Library; The Ohio State University Libraries"
         ]
       },
       "homepage": [
@@ -743,28 +743,17 @@
           "type": "Text",
           "label": {
             "en": [
-              "Yale Library homepage"
+              "Yale Library"
             ]
           },
           "format": "text/html"
-        }
-      ]
-    },
-    {
-      "id": "https://www.wikidata.org/wiki/Q1065534",
-      "type": "Agent",
-      "label": {
-        "en": [
-          "The Ohio State University Libraries"
-        ]
-      },
-      "homepage": [
+        },
         {
           "id": "https://library.osu.edu/",
           "type": "Text",
           "label": {
             "en": [
-              "OSU Libraries homepage"
+              "OSU Libraries"
             ]
           },
           "format": "text/html"
@@ -798,7 +787,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "yale-16394185 · recto"
+          "yale-folio 1, recto"
         ]
       },
       "width": 5533,
@@ -853,7 +842,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "yale-16394186 · verso"
+          "yale-folio 1, verso"
         ]
       },
       "width": 5516,
@@ -908,7 +897,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-1831cz206 · folio 1, recto"
+          "osu-folio 1, recto"
         ]
       },
       "width": 4021,
@@ -947,7 +936,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-1257b553f · folio 1, verso"
+          "osu-folio 1, verso"
         ]
       },
       "width": 4006,
@@ -986,7 +975,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-9306tb198 · folio 2, recto"
+          "osu-folio 2, recto"
         ]
       },
       "width": 3182,
@@ -1025,7 +1014,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-9880w411h · folio 2, verso"
+          "osu-folio 2, verso"
         ]
       },
       "width": 3182,
@@ -1064,7 +1053,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-dj52wj399 · folio 3, recto"
+          "osu-folio 3, recto"
         ]
       },
       "width": 3182,
@@ -1103,7 +1092,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-4q77g497m · folio 3, verso"
+          "osu-folio 3, verso"
         ]
       },
       "width": 3182,
@@ -1142,7 +1131,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-wd376850w · folio 3.1, recto"
+          "osu-folio 3.1, recto"
         ]
       },
       "width": 7639,
@@ -1181,7 +1170,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-h702qk01p · folio 3.1, verso"
+          "osu-folio 3.1, verso"
         ]
       },
       "width": 7640,
@@ -1220,7 +1209,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-d217r2498 · folio 4, recto"
+          "osu-folio 4, recto"
         ]
       },
       "width": 3222,
@@ -1259,7 +1248,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-g445cr94k · folio 4, verso"
+          "osu-folio 4, verso"
         ]
       },
       "width": 3199,
@@ -1298,7 +1287,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-x059cm590 · folio 5, recto"
+          "osu-folio 5, recto"
         ]
       },
       "width": 3182,
@@ -1337,7 +1326,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-mc87q357j · folio 5, verso"
+          "osu-folio 5, verso"
         ]
       },
       "width": 3182,
@@ -1376,7 +1365,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-rn301d67d · folio 6, recto"
+          "osu-folio 6, recto"
         ]
       },
       "width": 3182,
@@ -1415,7 +1404,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-mc87q358t · folio 6, verso"
+          "osu-folio 6, verso"
         ]
       },
       "width": 3182,
@@ -1454,7 +1443,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-dv140656w · folio 7, recto"
+          "osu-folio 7, recto"
         ]
       },
       "width": 3185,
@@ -1493,7 +1482,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-qf85nq75t · folio 7, verso"
+          "osu-folio 7, verso"
         ]
       },
       "width": 3182,
@@ -1532,7 +1521,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-ff365j026 · folio 7.10, recto"
+          "osu-folio 7.10, recto"
         ]
       },
       "width": 7615,
@@ -1571,7 +1560,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-r207v2202 · folio 7.10, verso"
+          "osu-folio 7.10, verso"
         ]
       },
       "width": 7646,
@@ -1610,7 +1599,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-gx41mx57q · folio 8, recto"
+          "osu-folio 8, recto"
         ]
       },
       "width": 3224,
@@ -1649,7 +1638,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-rn301d68p · folio 8, verso"
+          "osu-folio 8, verso"
         ]
       },
       "width": 3224,
@@ -1688,7 +1677,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-9019sf50h · folio 9, recto"
+          "osu-folio 9, recto"
         ]
       },
       "width": 3182,
@@ -1727,7 +1716,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "osu-xw42nm98s · folio 9, verso"
+          "osu-folio 9, verso"
         ]
       },
       "width": 3182,

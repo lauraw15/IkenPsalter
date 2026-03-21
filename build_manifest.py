@@ -6,12 +6,11 @@ into a single IIIF v3 compliant manifest.
 
 Canvas label scheme
 -------------------
-Yale:  yale-<OID> · recto / verso
-       OID comes from the canvas URL; side is preserved from the original label.
+Yale:  yale-folio 1, recto / yale-folio 1, verso
+       Yale has one folio (bifolium); side is inferred from position (0=recto, 1=verso).
 
-OSU:   osu-<fileset-id> · folio N, recto|verso
-       fileset-id comes from the canvas @id URL; side is inferred from
-       position within the folio sequence (index 0 = recto, index 1 = verso).
+OSU:   osu-folio N, recto / osu-folio N, verso
+       Side is inferred from position within the folio sequence (0=recto, 1=verso).
 
 Usage:
     python3 build_manifest.py
@@ -72,9 +71,8 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
     canvas_idx: 0-based position within the folio (0=recto, 1=verso)
     """
     canvas_id = canvas_v2["@id"]
-    fs_id = canvas_id.split("/file_sets/")[1]
     side = SIDES[canvas_idx]
-    label_str = f"osu-{fs_id} · folio {folio}, {side}"
+    label_str = f"osu-folio {folio}, {side}"
 
     anno_list = []
     for img in canvas_v2.get("images", []):
@@ -142,12 +140,9 @@ for folio, path in OSU_FILES:
 # ── Yale canvases — already v3, pass through with normalised labels ───────────
 
 yale_canvases = []
-for item in yale["items"]:
-    # OID is the final segment of the canvas id URL
-    oid = item["id"].split("/canvas/")[1]
-    # original label is 'recto' or 'verso' — preserve the side, add prefix
-    side = list(item["label"].values())[0][0]
-    label_str = f"yale-{oid} · {side}"
+for idx, item in enumerate(yale["items"]):
+    side = SIDES[idx]  # Yale has one bifolium: index 0=recto, 1=verso
+    label_str = f"yale-folio 1, {side}"
 
     canvas = {
         "id":     item["id"],
@@ -213,18 +208,15 @@ combined = {
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "provider": [
         {
-            "id":   "https://www.wikidata.org/wiki/Q2583293",
+            "id":   "https://github.com/lauraw15/IkenPsalter",
             "type": "Agent",
-            "label": {"en": ["Yale University Library"]},
-            "homepage": [{"id": "https://library.yale.edu/", "type": "Text",
-                          "label": {"en": ["Yale Library homepage"]}, "format": "text/html"}],
-        },
-        {
-            "id":   "https://www.wikidata.org/wiki/Q1065534",
-            "type": "Agent",
-            "label": {"en": ["The Ohio State University Libraries"]},
-            "homepage": [{"id": "https://library.osu.edu/", "type": "Text",
-                          "label": {"en": ["OSU Libraries homepage"]}, "format": "text/html"}],
+            "label": {"en": ["Yale University Library; The Ohio State University Libraries"]},
+            "homepage": [
+                {"id": "https://library.yale.edu/", "type": "Text",
+                 "label": {"en": ["Yale Library"]}, "format": "text/html"},
+                {"id": "https://library.osu.edu/", "type": "Text",
+                 "label": {"en": ["OSU Libraries"]}, "format": "text/html"},
+            ],
         },
     ],
     "thumbnail": yale.get("thumbnail", []),
