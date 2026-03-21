@@ -4,16 +4,25 @@ build_manifest.py
 Combines Yale (IIIF v3) and OSU (IIIF v2) Psalter fragment manifests
 into a single IIIF v3 compliant manifest.
 
+Canvas label scheme
+-------------------
+Yale:  yale-<OID> · recto / verso
+       OID comes from the canvas URL; side is preserved from the original label.
+
+OSU:   osu-<fileset-id> · folio N, recto|verso
+       fileset-id comes from the canvas @id URL; side is inferred from
+       position within the folio sequence (index 0 = recto, index 1 = verso).
+
 Usage:
     python3 build_manifest.py
+
+    Source JSON files must be in the same directory as this script.
 
 Output:
     iken-psalter-fragments-manifest.json
 
 Notes:
-    - Edit MANIFEST_ID below before hosting the output file.
-    - Yale manifest leads, followed by OSU folios in order.
-    - OSU sub-variants (3.1, 7.10) follow their parent folio.
+    Update MANIFEST_ID before hosting the output file.
 """
 
 import json
@@ -25,7 +34,7 @@ MANIFEST_ID = "https://example.org/iken-psalter-fragments/manifest"  # ← updat
 
 YALE_FILE = "yale-16371296.json"
 
-# OSU files in desired folio order (folio label, filename)
+# OSU source files in desired folio order
 OSU_FILES = [
     ("1",    "osu-1.json"),
     ("2",    "osu-2.json"),
@@ -42,6 +51,8 @@ OSU_FILES = [
 
 OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 
+SIDES = ["recto", "verso"]
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def make_image_service(service_id):
@@ -53,17 +64,23 @@ def make_image_service(service_id):
     }]
 
 
-def osu_canvas_to_v3(folio, canvas_v2):
-    """Convert a single OSU IIIF v2 canvas dict to a IIIF v3 canvas dict."""
+def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
+    """
+    Convert a single OSU IIIF v2 canvas to IIIF v3.
+
+    Label format: osu-<fileset-id> · folio N, recto|verso
+    canvas_idx: 0-based position within the folio (0=recto, 1=verso)
+    """
     canvas_id = canvas_v2["@id"]
-    label_str = canvas_v2.get("label", f"Folio {folio}")
+    fs_id = canvas_id.split("/file_sets/")[1]
+    side = SIDES[canvas_idx]
+    label_str = f"osu-{fs_id} · folio {folio}, {side}"
 
     anno_list = []
     for img in canvas_v2.get("images", []):
         res = img["resource"]
         svc = res.get("service", {})
         svc_id = svc.get("@id", "")
-
         body = {
             "id":     res["@id"] + "/full/full/0/default.jpg",
             "type":   "Image",
@@ -73,7 +90,6 @@ def osu_canvas_to_v3(folio, canvas_v2):
         }
         if svc_id:
             body["service"] = make_image_service(svc_id)
-
         anno_list.append({
             "id":         img["@id"],
             "type":       "Annotation",
@@ -123,14 +139,20 @@ for folio, path in OSU_FILES:
     with open(path) as f:
         osu_data.append((folio, json.load(f)))
 
-# ── Build Yale canvases (already v3, pass through) ───────────────────────────
+# ── Yale canvases — already v3, pass through with normalised labels ───────────
 
 yale_canvases = []
 for item in yale["items"]:
+    # OID is the final segment of the canvas id URL
+    oid = item["id"].split("/canvas/")[1]
+    # original label is 'recto' or 'verso' — preserve the side, add prefix
+    side = list(item["label"].values())[0][0]
+    label_str = f"yale-{oid} · {side}"
+
     canvas = {
         "id":     item["id"],
         "type":   "Canvas",
-        "label":  item.get("label", {"none": ["Yale canvas"]}),
+        "label":  {"none": [label_str]},
         "width":  item["width"],
         "height": item["height"],
         "items":  item["items"],
@@ -139,15 +161,15 @@ for item in yale["items"]:
         canvas["thumbnail"] = item["thumbnail"]
     yale_canvases.append(canvas)
 
-# ── Build OSU canvases (v2 → v3) ─────────────────────────────────────────────
+# ── OSU canvases — v2 → v3, normalised labels ────────────────────────────────
 
 osu_canvases = []
 for folio, manifest in osu_data:
     for seq in manifest.get("sequences", []):
-        for canvas_v2 in seq.get("canvases", []):
-            osu_canvases.append(osu_canvas_to_v3(folio, canvas_v2))
+        for canvas_idx, canvas_v2 in enumerate(seq.get("canvases", [])):
+            osu_canvases.append(osu_canvas_to_v3(folio, canvas_v2, canvas_idx))
 
-# ── Merge metadata ────────────────────────────────────────────────────────────
+# ── Metadata ──────────────────────────────────────────────────────────────────
 
 yale_meta = yale.get("metadata", [])
 
@@ -194,23 +216,15 @@ combined = {
             "id":   "https://www.wikidata.org/wiki/Q2583293",
             "type": "Agent",
             "label": {"en": ["Yale University Library"]},
-            "homepage": [{
-                "id":     "https://library.yale.edu/",
-                "type":   "Text",
-                "label":  {"en": ["Yale Library homepage"]},
-                "format": "text/html",
-            }],
+            "homepage": [{"id": "https://library.yale.edu/", "type": "Text",
+                          "label": {"en": ["Yale Library homepage"]}, "format": "text/html"}],
         },
         {
             "id":   "https://www.wikidata.org/wiki/Q1065534",
             "type": "Agent",
             "label": {"en": ["The Ohio State University Libraries"]},
-            "homepage": [{
-                "id":     "https://library.osu.edu/",
-                "type":   "Text",
-                "label":  {"en": ["OSU Libraries homepage"]},
-                "format": "text/html",
-            }],
+            "homepage": [{"id": "https://library.osu.edu/", "type": "Text",
+                          "label": {"en": ["OSU Libraries homepage"]}, "format": "text/html"}],
         },
     ],
     "thumbnail": yale.get("thumbnail", []),
@@ -226,4 +240,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 total = len(combined["items"])
 print(f"Written: {OUTPUT_FILE}")
-print(f"Total canvases : {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)})")
+print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)})")
+print("\nCanvas labels:")
+for c in combined["items"]:
+    print(f"  {list(c['label'].values())[0][0]}")
