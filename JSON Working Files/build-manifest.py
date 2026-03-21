@@ -170,10 +170,23 @@ combined = {
     "id":   MANIFEST_ID,
     "type": "Manifest",
     "label": {"en": ["Iken Psalter Fragments"]},
+    "summary": {"en": [
+        "A combined presentation of Iken Psalter fragments held at two institutions: "
+        "a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, "
+        "Beinecke Library, Yale University), and eleven parchment bifolium fragments "
+        "(SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, "
+        "The Ohio State University). "
+        "24 canvases total. Latin psalter, circa 1290–1310, possibly written for "
+        "the church of St. Botolph in Essex."
+    ]},
     "metadata": yale_meta + osu_meta_combined,
     "requiredStatement": {
         "label": {"en": ["Provider"]},
-        "value": {"en": ["Yale University Library; The Ohio State University Libraries"]},
+        "value": {"en": [
+            "Yale University Library (Takamiya MS 136); "
+            "The Ohio State University Libraries, Rare Books and Manuscripts Library "
+            "(SPEC.RARE.MS.MR.FRAG.60.1–9)"
+        ]},
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "provider": [
