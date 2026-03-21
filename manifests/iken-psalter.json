@@ -1,34 +1,46 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://lauraw15.github.io/IkenPsalter/manifests/iken-psalter.json",
+  "id": "https://example.org/iken-psalter-fragments/manifest",
   "type": "Manifest",
   "label": {
     "en": [
-      "Iken Psalter (composite manifest)"
+      "Iken Psalter Fragments"
     ]
-  },
-  "requiredStatement": {
-    "label": {
-      "en": [
-        "Attribution"
-      ]
-    },
-    "value": {
-      "en": [
-        "Images courtesy of The Ohio State University Libraries and Yale University Library. Manifest assembled for the Iken Psalter project."
-      ]
-    }
   },
   "metadata": [
     {
       "label": {
         "en": [
-          "Project"
+          "Published/Created Date"
         ]
       },
       "value": {
+        "none": [
+          "[1400-1499]"
+        ]
+      }
+    },
+    {
+      "label": {
         "en": [
-          "Iken Psalter"
+          "Publication Place"
+        ]
+      },
+      "value": {
+        "none": [
+          "England"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Abstract"
+        ]
+      },
+      "value": {
+        "none": [
+          "Full-page pen drawing, in brown ink, of King Edmund the Martyr holding an arrow. Accompanied by four lines of verse in Middle English"
         ]
       }
     },
@@ -39,45 +51,763 @@
         ]
       },
       "value": {
-        "en": [
-          "Complete manifest with 24 canvases (12 folios) grouped using IIIF v3 structures."
+        "none": [
+          "In Middle English; original text on bifolium is in Latin.",
+          "Drawn on the blank page of a bifolium once used as the flyleaf of a Latin Psalter (circa 1290-1310) that may have been written for the church of St. Botolph in Essex."
         ]
       }
     },
     {
       "label": {
         "en": [
-          "Total Folios"
+          "Provenance"
         ]
       },
       "value": {
+        "none": [
+          "Purchased from Toshiyuki Takamiya on the Edwin J. Beinecke Book Fund, 2017."
+        ]
+      }
+    },
+    {
+      "label": {
         "en": [
-          "12 folios (1 from Yale, 11 from OSU)"
+          "Extent"
+        ]
+      },
+      "value": {
+        "none": [
+          "2 leaves : 267 mm x 180 mm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "none": [
+          "English, Middle (1100-1500)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Repository"
+        ]
+      },
+      "value": {
+        "none": [
+          "Beinecke Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Call Number"
+        ]
+      },
+      "value": {
+        "none": [
+          "Takamiya MS 136"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Container / Volume Information"
+        ]
+      },
+      "value": {
+        "none": [
+          "File"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Extent of Digitization"
+        ]
+      },
+      "value": {
+        "none": [
+          "Completely digitized"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Genre"
+        ]
+      },
+      "value": {
+        "none": [
+          "Portraits",
+          "Drawings (visual works) England 15th century",
+          "Manuscripts, Medieval England 15th century",
+          "Medieval and Renaissance Manuscripts in Beinecke Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Material"
+        ]
+      },
+      "value": {
+        "none": [
+          "parchment ;"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Resource Type"
+        ]
+      },
+      "value": {
+        "none": [
+          "unspecified"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject (Geographic)"
+        ]
+      },
+      "value": {
+        "none": [
+          "Connecticut",
+          "New Haven."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject (Name)"
+        ]
+      },
+      "value": {
+        "none": [
+          "Edmund, King of East Anglia, 841-870"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject (Topic)"
+        ]
+      },
+      "value": {
+        "none": [
+          "Manuscripts, Medieval"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Access"
+        ]
+      },
+      "value": {
+        "none": [
+          "Public"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "none": [
+          "The use of this image may be subject to the copyright law of the United States (Title 17, United States Code) or to site license or other rights management terms and conditions. The person using the image is liable for any infringement."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Citation"
+        ]
+      },
+      "value": {
+        "none": [
+          "Drawing of King Edmund the Martyr (Takamiya MS 136). General Collection, Beinecke Rare Book and Manuscript Library, Yale University."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Orbis ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "12283111"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Object ID (OID)"
+        ]
+      },
+      "value": {
+        "none": [
+          "16371296"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Unit"
+        ]
+      },
+      "value": {
+        "none": [
+          "Rare Books and Manuscripts Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/731b4b11-93a9-4711-9239-d2ac91a50b6d"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalters"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "none": [
+          "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/97b83279-4db4-4574-8a6f-6718c2431a8a"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 3"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/d9df8395-c575-463a-97d0-82cb55fd9919"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.3"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 3.1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/5307b371-49c2-44ad-a8cb-24a841535e8b"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.3.1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 4"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/33e2f13b-934c-4b23-b792-69bc2234204b"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.4"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 5"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/d4ce2422-766e-4d49-9785-f43fce1051a3"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.5"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 6"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/fa05bd08-7201-4ddd-aa01-7a2eea18187a"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.6"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 7"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/6e91d9ef-9be2-434b-ade1-0af3c0b8c1b4"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.7"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 7.10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/0a0db418-50e1-4128-8ba1-49a523a16e12"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.7.10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 8"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/dba989ac-622a-4f5d-8182-8f1d98e12d52"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.8"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Psalter - folio 9"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Permanent Link"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://hdl.handle.net/1811/70e5a37e-6cdf-41bf-9186-e294b77b0200"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "SPEC.RARE.MS.MR.FRAG.60.9"
         ]
       }
     }
   ],
-  "items": [
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Provider"
+      ]
+    },
+    "value": {
+      "en": [
+        "Yale University Library; The Ohio State University Libraries"
+      ]
+    }
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "provider": [
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r",
-      "type": "Canvas",
+      "id": "https://www.wikidata.org/wiki/Q2583293",
+      "type": "Agent",
       "label": {
         "en": [
-          "Folio Y1r"
+          "Yale University Library"
         ]
       },
-      "height": 4290,
+      "homepage": [
+        {
+          "id": "https://library.yale.edu/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "Yale Library homepage"
+            ]
+          },
+          "format": "text/html"
+        }
+      ]
+    },
+    {
+      "id": "https://www.wikidata.org/wiki/Q1065534",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "The Ohio State University Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://library.osu.edu/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "OSU Libraries homepage"
+            ]
+          },
+          "format": "text/html"
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://collections.library.yale.edu/iiif/2/16394185/full/!300,300/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "height": 233,
+      "width": 300,
+      "service": [
+        {
+          "@id": "https://collections.library.yale.edu/iiif/2/16394185",
+          "@type": "ImageService2",
+          "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+      ]
+    }
+  ],
+  "start": {
+    "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185",
+    "type": "Canvas"
+  },
+  "items": [
+    {
+      "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "recto"
+        ]
+      },
       "width": 5533,
+      "height": 4290,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-y1r/1",
+          "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-y1r/1",
+              "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185/image/1",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r",
+              "target": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185",
               "body": {
                 "id": "https://collections.library.yale.edu/iiif/2/16394185/full/full/0/default.jpg",
                 "type": "Image",
@@ -86,8 +816,8 @@
                 "width": 5533,
                 "service": [
                   {
-                    "id": "https://collections.library.yale.edu/iiif/2/16394185",
-                    "type": "ImageService2",
+                    "@id": "https://collections.library.yale.edu/iiif/2/16394185",
+                    "@type": "ImageService2",
                     "profile": "http://iiif.io/api/image/2/level2.json"
                   }
                 ]
@@ -95,28 +825,44 @@
             }
           ]
         }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://collections.library.yale.edu/iiif/2/16394185/full/!300,300/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 233,
+          "width": 300,
+          "service": [
+            {
+              "@id": "https://collections.library.yale.edu/iiif/2/16394185",
+              "@type": "ImageService2",
+              "profile": "http://iiif.io/api/image/2/level2.json"
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v",
+      "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394186",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio Y1v"
+        "none": [
+          "verso"
         ]
       },
-      "height": 4302,
       "width": 5516,
+      "height": 4302,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-y1v/1",
+          "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394186/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-y1v/1",
+              "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394186/image/1",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v",
+              "target": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394186",
               "body": {
                 "id": "https://collections.library.yale.edu/iiif/2/16394186/full/full/0/default.jpg",
                 "type": "Image",
@@ -125,8 +871,8 @@
                 "width": 5516,
                 "service": [
                   {
-                    "id": "https://collections.library.yale.edu/iiif/2/16394186",
-                    "type": "ImageService2",
+                    "@id": "https://collections.library.yale.edu/iiif/2/16394186",
+                    "@type": "ImageService2",
                     "profile": "http://iiif.io/api/image/2/level2.json"
                   }
                 ]
@@ -134,34 +880,50 @@
             }
           ]
         }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://collections.library.yale.edu/iiif/2/16394186/full/!300,300/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 234,
+          "width": 300,
+          "service": [
+            {
+              "@id": "https://collections.library.yale.edu/iiif/2/16394186",
+              "@type": "ImageService2",
+              "profile": "http://iiif.io/api/image/2/level2.json"
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 1r"
+        "none": [
+          "Canvas-1831cz206"
         ]
       },
-      "height": 5883,
       "width": 4021,
+      "height": 5883,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-1r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-1r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/1831cz206",
               "body": {
-                "id": "https://library.osu.edu/loris/1831cz206.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 5883,
                 "width": 4021,
+                "height": 5883,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/1831cz206.jp2",
@@ -176,31 +938,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 1v"
+        "none": [
+          "Canvas-1257b553f"
         ]
       },
-      "height": 5868,
       "width": 4006,
+      "height": 5868,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-1v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-1v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/1257b553f",
               "body": {
-                "id": "https://library.osu.edu/loris/1257b553f.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 5868,
                 "width": 4006,
+                "height": 5868,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/1257b553f.jp2",
@@ -215,31 +977,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 2r"
+        "none": [
+          "Canvas-9306tb198"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-2r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-2r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
               "body": {
-                "id": "https://library.osu.edu/loris/9306tb198.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/9306tb198.jp2",
@@ -254,31 +1016,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 2v"
+        "none": [
+          "Canvas-9880w411h"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-2v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-2v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/9880w411h",
               "body": {
-                "id": "https://library.osu.edu/loris/9880w411h.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/9880w411h.jp2",
@@ -293,109 +1055,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 3.1r"
+        "none": [
+          "Canvas-dj52wj399"
         ]
       },
-      "height": 9781,
-      "width": 7639,
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3.1r/1",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3.1r/1",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r",
-              "body": {
-                "id": "https://library.osu.edu/loris/wd376850w.jp2/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "height": 9781,
-                "width": 7639,
-                "service": [
-                  {
-                    "id": "https://library.osu.edu/loris/wd376850w.jp2",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v",
-      "type": "Canvas",
-      "label": {
-        "en": [
-          "Folio 3.1v"
-        ]
-      },
-      "height": 9775,
-      "width": 7640,
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3.1v/1",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3.1v/1",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v",
-              "body": {
-                "id": "https://library.osu.edu/loris/h702qk01p.jp2/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "height": 9775,
-                "width": 7640,
-                "service": [
-                  {
-                    "id": "https://library.osu.edu/loris/h702qk01p.jp2",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3r",
-      "type": "Canvas",
-      "label": {
-        "en": [
-          "Folio 3r"
-        ]
-      },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/dj52wj399",
               "body": {
-                "id": "https://library.osu.edu/loris/dj52wj399.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/dj52wj399.jp2",
@@ -410,31 +1094,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 3v"
+        "none": [
+          "Canvas-4q77g497m"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/4q77g497m",
               "body": {
-                "id": "https://library.osu.edu/loris/4q77g497m.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/4q77g497m.jp2",
@@ -449,31 +1133,109 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 4r"
+        "none": [
+          "Canvas-wd376850w"
         ]
       },
-      "height": 4701,
-      "width": 3222,
+      "width": 7639,
+      "height": 9781,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-4r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-4r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/wd376850w",
               "body": {
-                "id": "https://library.osu.edu/loris/d217r2498.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4701,
+                "width": 7639,
+                "height": 9781,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/wd376850w.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Canvas-h702qk01p"
+        ]
+      },
+      "width": 7640,
+      "height": 9775,
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p/images",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
+              "body": {
+                "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 7640,
+                "height": 9775,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/h702qk01p.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Canvas-d217r2498"
+        ]
+      },
+      "width": 3222,
+      "height": 4701,
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498/images",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://library.osu.edu/dc/concern/file_sets/d217r2498",
+              "body": {
+                "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
                 "width": 3222,
+                "height": 4701,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/d217r2498.jp2",
@@ -488,31 +1250,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 4v"
+        "none": [
+          "Canvas-g445cr94k"
         ]
       },
-      "height": 4693,
       "width": 3199,
+      "height": 4693,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-4v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-4v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/g445cr94k",
               "body": {
-                "id": "https://library.osu.edu/loris/g445cr94k.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4693,
                 "width": 3199,
+                "height": 4693,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/g445cr94k.jp2",
@@ -527,31 +1289,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 5r"
+        "none": [
+          "Canvas-x059cm590"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-5r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-5r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/x059cm590",
               "body": {
-                "id": "https://library.osu.edu/loris/x059cm590.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/x059cm590.jp2",
@@ -566,31 +1328,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 5v"
+        "none": [
+          "Canvas-mc87q357j"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-5v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-5v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/mc87q357j",
               "body": {
-                "id": "https://library.osu.edu/loris/mc87q357j.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/mc87q357j.jp2",
@@ -605,31 +1367,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 6r"
+        "none": [
+          "Canvas-rn301d67d"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-6r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-6r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/rn301d67d",
               "body": {
-                "id": "https://library.osu.edu/loris/rn301d67d.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/rn301d67d.jp2",
@@ -644,31 +1406,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 6v"
+        "none": [
+          "Canvas-mc87q358t"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-6v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-6v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/mc87q358t",
               "body": {
-                "id": "https://library.osu.edu/loris/mc87q358t.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/mc87q358t.jp2",
@@ -683,31 +1445,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 7r"
+        "none": [
+          "Canvas-dv140656w"
         ]
       },
-      "height": 4697,
       "width": 3185,
+      "height": 4697,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/dv140656w",
               "body": {
-                "id": "https://library.osu.edu/loris/dv140656w.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4697,
                 "width": 3185,
+                "height": 4697,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/dv140656w.jp2",
@@ -722,31 +1484,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 7v"
+        "none": [
+          "Canvas-qf85nq75t"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t",
               "body": {
-                "id": "https://library.osu.edu/loris/qf85nq75t.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/qf85nq75t.jp2",
@@ -761,31 +1523,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 7.10r"
+        "none": [
+          "Canvas-ff365j026"
         ]
       },
-      "height": 9851,
       "width": 7615,
+      "height": 9851,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7.10r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7.10r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/ff365j026",
               "body": {
-                "id": "https://library.osu.edu/loris/ff365j026.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 9851,
                 "width": 7615,
+                "height": 9851,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/ff365j026.jp2",
@@ -800,31 +1562,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 7.10v"
+        "none": [
+          "Canvas-r207v2202"
         ]
       },
-      "height": 9855,
       "width": 7646,
+      "height": 9855,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7.10v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7.10v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/r207v2202",
               "body": {
-                "id": "https://library.osu.edu/loris/r207v2202.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 9855,
                 "width": 7646,
+                "height": 9855,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/r207v2202.jp2",
@@ -839,31 +1601,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 8r"
+        "none": [
+          "Canvas-gx41mx57q"
         ]
       },
-      "height": 4688,
       "width": 3224,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-8r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-8r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q",
               "body": {
-                "id": "https://library.osu.edu/loris/gx41mx57q.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3224,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/gx41mx57q.jp2",
@@ -878,31 +1640,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 8v"
+        "none": [
+          "Canvas-rn301d68p"
         ]
       },
-      "height": 4688,
       "width": 3224,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-8v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-8v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/rn301d68p",
               "body": {
-                "id": "https://library.osu.edu/loris/rn301d68p.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3224,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/rn301d68p.jp2",
@@ -917,31 +1679,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9r",
+      "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 9r"
+        "none": [
+          "Canvas-9019sf50h"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-9r/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-9r/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9r",
+              "target": "https://library.osu.edu/dc/concern/file_sets/9019sf50h",
               "body": {
-                "id": "https://library.osu.edu/loris/9019sf50h.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/9019sf50h.jp2",
@@ -956,31 +1718,31 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9v",
+      "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s",
       "type": "Canvas",
       "label": {
-        "en": [
-          "Folio 9v"
+        "none": [
+          "Canvas-xw42nm98s"
         ]
       },
-      "height": 4688,
       "width": 3182,
+      "height": 4688,
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-9v/1",
+          "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-9v/1",
+              "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s/images",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9v",
+              "target": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s",
               "body": {
-                "id": "https://library.osu.edu/loris/xw42nm98s.jp2/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4688,
                 "width": 3182,
+                "height": 4688,
                 "service": [
                   {
                     "id": "https://library.osu.edu/loris/xw42nm98s.jp2",
@@ -995,234 +1757,5 @@
       ]
     }
   ],
-  "structures": [
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-y1",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio Y1"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-1",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 1"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-1v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-2",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 2"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-2v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-3.1",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 3.1"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-3",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 3"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-4",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 4"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-4v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-5",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 5"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-5v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-6",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 6"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-6v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-7",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 7"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-7.10",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 7.10"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-8",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 8"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-8v",
-          "type": "Canvas"
-        }
-      ]
-    },
-    {
-      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-9",
-      "type": "Range",
-      "label": {
-        "en": [
-          "Folio 9"
-        ]
-      },
-      "items": [
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9r",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-9v",
-          "type": "Canvas"
-        }
-      ]
-    }
-  ]
+  "structures": []
 }
