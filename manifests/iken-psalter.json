@@ -1,0 +1,265 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://lauraw15.github.io/IkenPsalter/manifests/iken-psalter.json",
+  "type": "Manifest",
+  "label": { "en": ["Iken Psalter (composite manifest)"] },
+
+  "requiredStatement": {
+    "label": { "en": ["Attribution"] },
+    "value": {
+      "en": [
+        "Images courtesy of The Ohio State University Libraries and Yale University Library. Manifest assembled for the Iken Psalter project."
+      ]
+    }
+  },
+
+  "metadata": [
+    { "label": { "en": ["Project"] }, "value": { "en": ["Iken Psalter"] } },
+    { "label": { "en": ["Description"] }, "value": { "en": ["Single manifest with canvases grouped by folio using IIIF v3 structures."] } }
+  ],
+
+  "items": [
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r",
+      "type": "Canvas",
+      "label": { "en": ["Folio Y1r"] },
+      "height": 4290,
+      "width": 5533,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-y1r/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-y1r/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r",
+              "body": {
+                "id": "https://collections.library.yale.edu/iiif/2/16394185/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4290,
+                "width": 5533,
+                "service": [
+                  {
+                    "id": "https://collections.library.yale.edu/iiif/2/16394185",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v",
+      "type": "Canvas",
+      "label": { "en": ["Folio Y1v"] },
+      "height": 4302,
+      "width": 5516,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-y1v/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-y1v/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v",
+              "body": {
+                "id": "https://collections.library.yale.edu/iiif/2/16394186/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4302,
+                "width": 5516,
+                "service": [
+                  {
+                    "id": "https://collections.library.yale.edu/iiif/2/16394186",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r",
+      "type": "Canvas",
+      "label": { "en": ["Folio 3.1r"] },
+      "height": 9781,
+      "width": 7639,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3.1r/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3.1r/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r",
+              "body": {
+                "id": "https://library.osu.edu/loris/wd376850w.jp2/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 9781,
+                "width": 7639,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/wd376850w.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v",
+      "type": "Canvas",
+      "label": { "en": ["Folio 3.1v"] },
+      "height": 9775,
+      "width": 7640,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-3.1v/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-3.1v/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v",
+              "body": {
+                "id": "https://library.osu.edu/loris/h702qk01p.jp2/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 9775,
+                "width": 7640,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/h702qk01p.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r",
+      "type": "Canvas",
+      "label": { "en": ["Folio 7.10r"] },
+      "height": 9851,
+      "width": 7615,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7.10r/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7.10r/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r",
+              "body": {
+                "id": "https://library.osu.edu/loris/ff365j026.jp2/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 9851,
+                "width": 7615,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/ff365j026.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v",
+      "type": "Canvas",
+      "label": { "en": ["Folio 7.10v"] },
+      "height": 9855,
+      "width": 7646,
+      "items": [
+        {
+          "id": "https://lauraw15.github.io/IkenPsalter/page/folio-7.10v/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://lauraw15.github.io/IkenPsalter/annotation/folio-7.10v/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v",
+              "body": {
+                "id": "https://library.osu.edu/loris/r207v2202.jp2/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 9855,
+                "width": 7646,
+                "service": [
+                  {
+                    "id": "https://library.osu.edu/loris/r207v2202.jp2",
+                    "type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "structures": [
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-y1",
+      "type": "Range",
+      "label": { "en": ["Folio Y1"] },
+      "items": [
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1r", "type": "Canvas" },
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-y1v", "type": "Canvas" }
+      ]
+    },
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-3.1",
+      "type": "Range",
+      "label": { "en": ["Folio 3.1"] },
+      "items": [
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1r", "type": "Canvas" },
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-3.1v", "type": "Canvas" }
+      ]
+    },
+    {
+      "id": "https://lauraw15.github.io/IkenPsalter/range/folio-7.10",
+      "type": "Range",
+      "label": { "en": ["Folio 7.10"] },
+      "items": [
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10r", "type": "Canvas" },
+        { "id": "https://lauraw15.github.io/IkenPsalter/canvas/folio-7.10v", "type": "Canvas" }
+      ]
+    }
+  ]
+}
