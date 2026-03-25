@@ -95,12 +95,15 @@ You can load the manifest directly into the hosted Mirador demo:
 
 If the source manifests change, the combined manifest can be rebuilt using the included Python script. No third-party dependencies are required — only the Python standard library.
 
+Run from inside the `source-manifests/` directory, then move the output to the repo root:
+
 ```bash
-# Place all source JSON files in the same directory as the script, then:
-python3 build_manifest.py
+cd source-manifests
+python3 ../build_manifest.py
+mv iken-psalter-fragments-manifest.json ../
 ```
 
-The script will write a fresh `iken-psalter-fragments-manifest.json` to the current directory and print a canvas count summary.
+The script will print a canvas count summary and list all canvas labels on completion.
 
 ---
 
