@@ -9,7 +9,7 @@
   },
   "summary": {
     "en": [
-      "A combined presentation of Iken Psalter fragments held at two institutions: a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, Beinecke Library, Yale University), and eleven parchment bifolium fragments (SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, The Ohio State University). 24 canvases total. Latin psalter, circa 1290–1310, possibly written for the church of St. Botolph in Essex."
+      "A combined presentation of Iken Psalter fragments held at three institutions: a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, Beinecke Library, Yale University), eleven parchment bifolium fragments (SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, The Ohio State University), and a leaf with historiated initial (1999.125, Cleveland Museum of Art). 25 canvases total. Latin psalter, circa 1290–1310, possibly written for the church of St. Botolph in Essex."
     ]
   },
   "metadata": [
@@ -713,6 +713,210 @@
           "SPEC.RARE.MS.MR.FRAG.60.9"
         ]
       }
+    },
+    {
+      "label": {
+        "none": [
+          "identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "clevelandart-1999.125-leaf-from-a-psalter"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "accession_number"
+        ]
+      },
+      "value": {
+        "none": [
+          "1999.125"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "creator"
+        ]
+      },
+      "value": {
+        "none": [
+          "Master of the Queen Mary Psalter (English)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "credit"
+        ]
+      },
+      "value": {
+        "none": [
+          "The Jeanne Miles Blackburn Collection"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "culture"
+        ]
+      },
+      "value": {
+        "none": [
+          "England, East Anglia, early 14th Century"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "date"
+        ]
+      },
+      "value": {
+        "none": [
+          "c.1310"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "dimensions"
+        ]
+      },
+      "value": {
+        "none": [
+          "Each leaf: 26.7 x 17.5 cm (10 1/2 x 6 7/8 in.)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "mediatype"
+        ]
+      },
+      "value": {
+        "none": [
+          "image"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "medium"
+        ]
+      },
+      "value": {
+        "none": [
+          "ink, tempera and gold on vellum"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "provenance"
+        ]
+      },
+      "value": {
+        "none": [
+          "Parish church of St. Botulph at Iken in Suffolk; [Sotheby's, London, 10 December 1969, lot 36 (for sister leaves)]; [Bruce Ferrini, Akron]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "scanner"
+        ]
+      },
+      "value": {
+        "none": [
+          "Internet Archive Python library 1.8.1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "source_url"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://www.clevelandart.org/art/1999.125"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "subject"
+        ]
+      },
+      "value": {
+        "none": [
+          "Medieval Art"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "title"
+        ]
+      },
+      "value": {
+        "none": [
+          "Leaf from a Psalter: Historiated Initial D with The Trinity"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "addeddate"
+        ]
+      },
+      "value": {
+        "none": [
+          "2019-01-17 13:38:21"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "collection"
+        ]
+      },
+      "value": {
+        "none": [
+          "clevelandart"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "last_update"
+        ]
+      },
+      "value": {
+        "none": [
+          "2023-08-15 06:03:25.410246"
+        ]
+      }
     }
   ],
   "requiredStatement": {
@@ -723,7 +927,7 @@
     },
     "value": {
       "en": [
-        "Yale University Library (Takamiya MS 136); The Ohio State University Libraries, Rare Books and Manuscripts Library (SPEC.RARE.MS.MR.FRAG.60.1–9)"
+        "Yale University Library (Takamiya MS 136); The Ohio State University Libraries, Rare Books and Manuscripts Library (SPEC.RARE.MS.MR.FRAG.60.1–9); Cleveland Museum of Art (1999.125)"
       ]
     }
   },
@@ -754,6 +958,16 @@
           "label": {
             "en": [
               "OSU Libraries"
+            ]
+          },
+          "format": "text/html"
+        },
+        {
+          "id": "https://www.clevelandart.org/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "Cleveland Museum of Art"
             ]
           },
           "format": "text/html"
@@ -1747,6 +1961,45 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "cleveland-folio 1, recto"
+        ]
+      },
+      "width": 1332,
+      "height": 2048,
+      "items": [
+        {
+          "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotationPage/1",
+          "items": [
+            {
+              "body": {
+                "format": "image/jpeg",
+                "height": 2048,
+                "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif/full/max/0/default.jpg",
+                "service": [
+                  {
+                    "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif",
+                    "profile": "level2",
+                    "type": "ImageService3"
+                  }
+                ],
+                "type": "Image",
+                "width": 1332
+              },
+              "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotation/1",
+              "motivation": "painting",
+              "target": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+              "type": "Annotation"
+            }
+          ],
+          "type": "AnnotationPage"
         }
       ]
     }

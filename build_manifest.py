@@ -29,21 +29,22 @@ import re
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-MANIFEST_ID = "https://example.org/iken-psalter-fragments/manifest"  # ← update before hosting
+MANIFEST_ID = "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json"
 
 YALE_FILE = "yale-16371296.json"
+CLEVELAND_FILE = "cleveland.json"
 
 # OSU source files in desired folio order
 OSU_FILES = [
     ("1",    "osu-1.json"),
     ("2",    "osu-2.json"),
     ("3",    "osu-3.json"),
-    ("3.1",  "osu-3_1.json"),
+    ("3.1",  "osu-3.1.json"),
     ("4",    "osu-4.json"),
     ("5",    "osu-5.json"),
     ("6",    "osu-6.json"),
     ("7",    "osu-7.json"),
-    ("7.10", "osu-7_10.json"),
+    ("7.10", "osu-7.10.json"),
     ("8",    "osu-8.json"),
     ("9",    "osu-9.json"),
 ]
@@ -132,6 +133,9 @@ def osu_metadata_to_v3(meta_list):
 with open(YALE_FILE) as f:
     yale = json.load(f)
 
+with open(CLEVELAND_FILE) as f:
+    cleveland = json.load(f)
+
 osu_data = []
 for folio, path in OSU_FILES:
     with open(path) as f:
@@ -155,6 +159,22 @@ for idx, item in enumerate(yale["items"]):
     if "thumbnail" in item:
         canvas["thumbnail"] = item["thumbnail"]
     yale_canvases.append(canvas)
+
+# ── Cleveland canvases — already v3, pass through with normalised labels ─────
+
+cleveland_canvases = []
+for idx, item in enumerate(cleveland["items"]):
+    canvas = {
+        "id":     item["id"],
+        "type":   "Canvas",
+        "label":  {"none": [f"cleveland-folio {idx + 1}, recto"]},
+        "width":  item["width"],
+        "height": item["height"],
+        "items":  item["items"],
+    }
+    if "thumbnail" in item:
+        canvas["thumbnail"] = item["thumbnail"]
+    cleveland_canvases.append(canvas)
 
 # ── OSU canvases — v2 → v3, normalised labels ────────────────────────────────
 
@@ -188,21 +208,23 @@ combined = {
     "type": "Manifest",
     "label": {"en": ["Iken Psalter Fragments"]},
     "summary": {"en": [
-        "A combined presentation of Iken Psalter fragments held at two institutions: "
+        "A combined presentation of Iken Psalter fragments held at three institutions: "
         "a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, "
-        "Beinecke Library, Yale University), and eleven parchment bifolium fragments "
+        "Beinecke Library, Yale University), eleven parchment bifolium fragments "
         "(SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, "
-        "The Ohio State University). "
-        "24 canvases total. Latin psalter, circa 1290–1310, possibly written for "
+        "The Ohio State University), and a leaf with historiated initial "
+        "(1999.125, Cleveland Museum of Art). "
+        "25 canvases total. Latin psalter, circa 1290–1310, possibly written for "
         "the church of St. Botolph in Essex."
     ]},
-    "metadata": yale_meta + osu_meta_combined,
+    "metadata": yale_meta + osu_meta_combined + cleveland.get("metadata", []),
     "requiredStatement": {
         "label": {"en": ["Provider"]},
         "value": {"en": [
             "Yale University Library (Takamiya MS 136); "
             "The Ohio State University Libraries, Rare Books and Manuscripts Library "
-            "(SPEC.RARE.MS.MR.FRAG.60.1–9)"
+            "(SPEC.RARE.MS.MR.FRAG.60.1–9); "
+            "Cleveland Museum of Art (1999.125)"
         ]},
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -216,12 +238,14 @@ combined = {
                  "label": {"en": ["Yale Library"]}, "format": "text/html"},
                 {"id": "https://library.osu.edu/", "type": "Text",
                  "label": {"en": ["OSU Libraries"]}, "format": "text/html"},
+                {"id": "https://www.clevelandart.org/", "type": "Text",
+                 "label": {"en": ["Cleveland Museum of Art"]}, "format": "text/html"},
             ],
         },
     ],
     "thumbnail": yale.get("thumbnail", []),
     "start": {"id": yale_canvases[0]["id"], "type": "Canvas"},
-    "items": yale_canvases + osu_canvases,
+    "items": yale_canvases + osu_canvases + cleveland_canvases,
     "structures": [],
 }
 
@@ -232,7 +256,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 total = len(combined["items"])
 print(f"Written: {OUTPUT_FILE}")
-print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)})")
+print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)}, Cleveland: {len(cleveland_canvases)})")
 print("\nCanvas labels:")
 for c in combined["items"]:
     print(f"  {list(c['label'].values())[0][0]}")
