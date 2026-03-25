@@ -29,22 +29,23 @@ import re
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-MANIFEST_ID = "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json"
+MANIFEST_ID = "https://example.org/iken-psalter-fragments/manifest"  # ← update before hosting
 
 YALE_FILE = "yale-16371296.json"
-CLEVELAND_FILE = "cleveland.json"
+
+CMA_FILE  = "cma-1999.125.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
 
 # OSU source files in desired folio order
 OSU_FILES = [
     ("1",    "osu-1.json"),
     ("2",    "osu-2.json"),
     ("3",    "osu-3.json"),
-    ("3.1",  "osu-3.1.json"),
+    ("3.1",  "osu-3_1.json"),
     ("4",    "osu-4.json"),
     ("5",    "osu-5.json"),
     ("6",    "osu-6.json"),
     ("7",    "osu-7.json"),
-    ("7.10", "osu-7.10.json"),
+    ("7.10", "osu-7_10.json"),
     ("8",    "osu-8.json"),
     ("9",    "osu-9.json"),
 ]
@@ -54,36 +55,6 @@ OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 SIDES = ["recto", "verso"]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-
-def normalize_service(svc):
-    """Convert v2-style @id/@type service properties to v3 id/type."""
-    if isinstance(svc, list):
-        return [normalize_service(s) for s in svc]
-    out = dict(svc)
-    if "@id" in out:
-        out["id"] = out.pop("@id")
-    if "@type" in out:
-        out["type"] = out.pop("@type")
-    return out
-
-
-def normalize_annotation_pages(pages):
-    """Recursively normalize service properties in annotation pages."""
-    result = []
-    for page in pages:
-        new_page = dict(page)
-        new_items = []
-        for anno in page.get("items", []):
-            new_anno = dict(anno)
-            body = dict(anno.get("body", {}))
-            if "service" in body:
-                body["service"] = normalize_service(body["service"])
-            new_anno["body"] = body
-            new_items.append(new_anno)
-        new_page["items"] = new_items
-        result.append(new_page)
-    return result
-
 
 def make_image_service(service_id):
     """Return a IIIF v3-shaped ImageService2 block."""
@@ -111,7 +82,7 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
         svc = res.get("service", {})
         svc_id = svc.get("@id", "")
         body = {
-            "id":     svc_id + "/full/full/0/default.jpg",
+            "id":     res["@id"] + "/full/full/0/default.jpg",
             "type":   "Image",
             "format": res.get("format", "image/jpeg"),
             "width":  res.get("width", canvas_v2["width"]),
@@ -163,8 +134,8 @@ def osu_metadata_to_v3(meta_list):
 with open(YALE_FILE) as f:
     yale = json.load(f)
 
-with open(CLEVELAND_FILE) as f:
-    cleveland = json.load(f)
+with open(CMA_FILE) as f:
+    cma = json.load(f)
 
 osu_data = []
 for folio, path in OSU_FILES:
@@ -184,40 +155,32 @@ for idx, item in enumerate(yale["items"]):
         "label":  {"none": [label_str]},
         "width":  item["width"],
         "height": item["height"],
-        "items":  normalize_annotation_pages(item["items"]),
+        "items":  item["items"],
     }
     if "thumbnail" in item:
         canvas["thumbnail"] = item["thumbnail"]
     yale_canvases.append(canvas)
 
-# ── Cleveland canvases — already v3, pass through with normalised labels ─────
-
-cleveland_canvases = []
-for idx, item in enumerate(cleveland["items"]):
-    canvas = {
-        "id":     item["id"],
-        "type":   "Canvas",
-        "label":  {"none": [f"cleveland-folio {idx + 1}, recto"]},
-        "width":  item["width"],
-        "height": item["height"],
-        "items":  item["items"],
-    }
-    if "thumbnail" in item:
-        canvas["thumbnail"] = item["thumbnail"]
-    cleveland_canvases.append(canvas)
-
 # ── OSU canvases — v2 → v3, normalised labels ────────────────────────────────
 
 osu_canvases = []
-osu_folio_ids = {}  # folio label -> [canvas_id, ...]
 for folio, manifest in osu_data:
-    folio_canvas_ids = []
     for seq in manifest.get("sequences", []):
         for canvas_idx, canvas_v2 in enumerate(seq.get("canvases", [])):
-            canvas = osu_canvas_to_v3(folio, canvas_v2, canvas_idx)
-            osu_canvases.append(canvas)
-            folio_canvas_ids.append(canvas["id"])
-    osu_folio_ids[folio] = folio_canvas_ids
+            osu_canvases.append(osu_canvas_to_v3(folio, canvas_v2, canvas_idx))
+
+# ── CMA canvas — already v3, pass through with normalised label ───────────────
+# Single-sided leaf: labelled cma-folio 1, recto
+
+cma_canvas_src = cma["items"][0]
+cma_canvases = [{
+    "id":     cma_canvas_src["id"],
+    "type":   "Canvas",
+    "label":  {"none": ["cma-folio 1, recto"]},
+    "width":  cma_canvas_src["width"],
+    "height": cma_canvas_src["height"],
+    "items":  cma_canvas_src["items"],
+}]
 
 # ── Metadata ──────────────────────────────────────────────────────────────────
 
@@ -235,55 +198,98 @@ for folio, manifest in osu_data:
             seen.add(key)
             osu_meta_combined.append(entry)
 
-# ── Structures (ranges for viewer navigation) ─────────────────────────────────
+# CMA metadata — de-duplicate against yale + osu keys
+cma_meta_combined = []
+for entry in cma.get("metadata", []):
+    label_key = list(entry["label"].values())[0][0]
+    val_key   = str(list(entry["value"].values())[0])
+    key = (label_key, val_key)
+    if key not in seen:
+        seen.add(key)
+        cma_meta_combined.append(entry)
 
-RANGE_BASE = MANIFEST_ID + "/range"
+# ── seeAlso / homepage links on canvases ─────────────────────────────────────
 
-def make_range(slug, label, items):
-    return {
-        "id":    f"{RANGE_BASE}/{slug}",
-        "type":  "Range",
-        "label": {"none": [label]},
-        "items": items,
-    }
+# Yale — both canvases share the same record
+yale_see_also = [{
+    "id":      "https://collections.library.yale.edu/catalog/oai?verb=GetRecord&metadataPrefix=oai_mods&identifier=oai:collections.library.yale.edu:16371296",
+    "type":    "Dataset",
+    "format":  "application/mods+xml",
+    "profile": "http://www.loc.gov/mods/v3",
+    "label":   {"en": ["MODS metadata record (Yale)"]},
+}]
+yale_homepage = [{
+    "id":     "https://collections.library.yale.edu/catalog/16371296",
+    "type":   "Text",
+    "format": "text/html",
+    "label":  {"en": ["Yale Digital Collections record"]},
+}]
+for canvas in yale_canvases:
+    canvas["seeAlso"]  = yale_see_also
+    canvas["homepage"] = yale_homepage
 
-leaf_ranges = []
+# OSU — unique permanent link and source manifest per folio
+osu_folio_links = [
+    ("1",    "wm1181815", "731b4b11-93a9-4711-9239-d2ac91a50b6d"),
+    ("2",    "1c18dt69z", "97b83279-4db4-4574-8a6f-6718c2431a8a"),
+    ("3",    "mk61rv69f", "d9df8395-c575-463a-97d0-82cb55fd9919"),
+    ("3.1",  "d504rz60b", "5307b371-49c2-44ad-a8cb-24a841535e8b"),
+    ("4",    "2z10x3125", "33e2f13b-934c-4b23-b792-69bc2234204b"),
+    ("5",    "rb68xq45h", "d4ce2422-766e-4d49-9785-f43fce1051a3"),
+    ("6",    "np193p133", "fa05bd08-7201-4ddd-aa01-7a2eea18187a"),
+    ("7",    "m039kh79c", "6e91d9ef-9be2-434b-ade1-0af3c0b8c1b4"),
+    ("7.10", "44558s88w", "0a0db418-50e1-4128-8ba1-49a523a16e12"),
+    ("8",    "t148fw28q", "dba989ac-622a-4f5d-8182-8f1d98e12d52"),
+    ("9",    "m900p677j", "70e5a37e-6cdf-41bf-9186-e294b77b0200"),
+]
 
-# Yale — one bifolium
-leaf_ranges.append(make_range(
-    "yale-1",
-    "Yale, folio 1 (Takamiya MS 136)",
-    [{"id": c["id"], "type": "Canvas"} for c in yale_canvases],
-))
+osu_canvas_iter = iter(osu_canvases)
+for (folio, work_id, hdl_uuid), (_, manifest) in zip(osu_folio_links, osu_data):
+    ident        = f"SPEC.RARE.MS.MR.FRAG.60.{folio}"
+    manifest_url = f"https://library.osu.edu/dc/dc/concern/generic_works/{work_id}/manifest"
+    hdl_url      = f"https://hdl.handle.net/1811/{hdl_uuid}"
+    see_also = [{
+        "id":     manifest_url,
+        "type":   "Dataset",
+        "format": "application/ld+json",
+        "profile":"http://iiif.io/api/presentation/2/context.json",
+        "label":  {"en": [f"IIIF manifest (OSU, {ident})"]},
+    }]
+    homepage = [{
+        "id":     hdl_url,
+        "type":   "Text",
+        "format": "text/html",
+        "label":  {"en": [f"OSU Libraries permanent link ({ident})"]},
+    }]
+    # apply to both canvases in this folio (recto + verso)
+    for _ in range(2):
+        canvas = next(osu_canvas_iter)
+        canvas["seeAlso"]  = see_also
+        canvas["homepage"] = homepage
 
-# OSU — one range per folio, preserving order from OSU_FILES
-for folio, _ in OSU_FILES:
-    slug = "osu-" + folio.replace(".", "-")
-    identifier = f"SPEC.RARE.MS.MR.FRAG.60.{folio}"
-    leaf_ranges.append(make_range(
-        slug,
-        f"OSU, folio {folio} ({identifier})",
-        [{"id": cid, "type": "Canvas"} for cid in osu_folio_ids[folio]],
-    ))
+# CMA — single canvas
+cma_canvases[0]["seeAlso"] = [{
+    "id":     "https://archive.org/metadata/clevelandart-1999.125-leaf-from-a-psalter",
+    "type":   "Dataset",
+    "format": "application/json",
+    "label":  {"en": ["Internet Archive item metadata (CMA acc. 1999.125)"]},
+}]
+cma_canvases[0]["homepage"] = [
+    {
+        "id":     "https://www.clevelandart.org/art/1999.125",
+        "type":   "Text",
+        "format": "text/html",
+        "label":  {"en": ["Cleveland Museum of Art collection record"]},
+    },
+    {
+        "id":     "https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter",
+        "type":   "Text",
+        "format": "text/html",
+        "label":  {"en": ["Internet Archive digitization page"]},
+    },
+]
 
-# Cleveland — single leaf
-leaf_ranges.append(make_range(
-    "cleveland-1",
-    "Cleveland, folio 1 (CMA 1999.125)",
-    [{"id": c["id"], "type": "Canvas"} for c in cleveland_canvases],
-))
 
-# Top-level range referencing all leaf ranges
-top_range = {
-    "id":    f"{RANGE_BASE}/top",
-    "type":  "Range",
-    "label": {"en": ["Iken Psalter Fragments"]},
-    "items": [{"id": r["id"], "type": "Range"} for r in leaf_ranges],
-}
-
-structures = [top_range] + leaf_ranges
-
-# ── Assemble combined manifest ────────────────────────────────────────────────
 
 combined = {
     "@context": "http://iiif.io/api/presentation/3/context.json",
@@ -293,34 +299,35 @@ combined = {
     "summary": {"en": [
         "A combined presentation of Iken Psalter fragments held at three institutions: "
         "a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, "
-        "Beinecke Library, Yale University), eleven parchment bifolium fragments "
+        "Beinecke Library, Yale University); eleven parchment bifolium fragments "
         "(SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, "
-        "The Ohio State University), and a leaf with historiated initial "
-        "(1999.125, Cleveland Museum of Art). "
-        "25 canvases total. Latin psalter, circa 1290–1310, possibly written for "
-        "the church of St. Botolph in Essex."
+        "The Ohio State University); and a single decorated leaf with a historiated initial "
+        "attributed to the Master of the Queen Mary Psalter (acc. 1999.125, "
+        "The Cleveland Museum of Art). "
+        "25 canvases total. Latin psalter, circa 1290–1310, East Anglia, England, "
+        "possibly written for the church of St. Botolph at Iken in Suffolk."
     ]},
-    "metadata": yale_meta + osu_meta_combined + cleveland.get("metadata", []),
+    "metadata": yale_meta + osu_meta_combined + cma_meta_combined,
     "requiredStatement": {
         "label": {"en": ["Provider"]},
         "value": {"en": [
             "Yale University Library (Takamiya MS 136); "
             "The Ohio State University Libraries, Rare Books and Manuscripts Library "
             "(SPEC.RARE.MS.MR.FRAG.60.1–9); "
-            "Cleveland Museum of Art (1999.125)"
+            "The Cleveland Museum of Art (acc. 1999.125, The Jeanne Miles Blackburn Collection)"
         ]},
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rights": "http://creativecommons.org/publicdomain/zero/1.0/",
     "provider": [
         {
             "id":   "https://github.com/lauraw15/IkenPsalter",
             "type": "Agent",
-            "label": {"en": ["Yale University Library; The Ohio State University Libraries"]},
+            "label": {"en": ["Yale University Library; The Ohio State University Libraries; The Cleveland Museum of Art"]},
             "homepage": [
-                {"id": "https://library.yale.edu/", "type": "Text",
-                 "label": {"en": ["Yale Library"]}, "format": "text/html"},
-                {"id": "https://library.osu.edu/", "type": "Text",
-                 "label": {"en": ["OSU Libraries"]}, "format": "text/html"},
+                {"id": "https://library.yale.edu/",     "type": "Text",
+                 "label": {"en": ["Yale Library"]},     "format": "text/html"},
+                {"id": "https://library.osu.edu/",      "type": "Text",
+                 "label": {"en": ["OSU Libraries"]},    "format": "text/html"},
                 {"id": "https://www.clevelandart.org/", "type": "Text",
                  "label": {"en": ["Cleveland Museum of Art"]}, "format": "text/html"},
             ],
@@ -328,9 +335,90 @@ combined = {
     ],
     "thumbnail": yale.get("thumbnail", []),
     "start": {"id": yale_canvases[0]["id"], "type": "Canvas"},
-    "items": yale_canvases + osu_canvases + cleveland_canvases,
-    "structures": structures,
+    "items": yale_canvases + osu_canvases + cma_canvases,
+    "structures": [],  # populated below
 }
+
+# ── Build structures (table of contents) ─────────────────────────────────────
+
+def range_id(slug):
+    return f"{MANIFEST_ID}#range-{slug}"
+
+def canvas_ref(canvas):
+    return {"id": canvas["id"], "type": "Canvas"}
+
+def collect_ranges(r):
+    """Recursively flatten all nested ranges into a list for structures[]."""
+    result = [r]
+    for item in r.get("items", []):
+        if item.get("type") == "Range":
+            result.extend(collect_ranges(item))
+    return result
+
+all_canvases = combined["items"]
+
+yale_range = {
+    "id":    range_id("yale"),
+    "type":  "Range",
+    "label": {"en": ["Yale University, Beinecke Library"]},
+    "items": [{
+        "id":    range_id("yale-folio-1"),
+        "type":  "Range",
+        "label": {"en": ["Folio 1 (Takamiya MS 136)"]},
+        "items": [canvas_ref(all_canvases[0]), canvas_ref(all_canvases[1])],
+    }],
+}
+
+osu_folio_defs = [
+    ("1",    [2,  3]),
+    ("2",    [4,  5]),
+    ("3",    [6,  7]),
+    ("3.1",  [8,  9]),
+    ("4",    [10, 11]),
+    ("5",    [12, 13]),
+    ("6",    [14, 15]),
+    ("7",    [16, 17]),
+    ("7.10", [18, 19]),
+    ("8",    [20, 21]),
+    ("9",    [22, 23]),
+]
+
+osu_range = {
+    "id":    range_id("osu"),
+    "type":  "Range",
+    "label": {"en": ["The Ohio State University, Rare Books and Manuscripts Library"]},
+    "items": [
+        {
+            "id":    range_id(f"osu-folio-{folio.replace('.', '-')}"),
+            "type":  "Range",
+            "label": {"en": [f"Folio {folio} (SPEC.RARE.MS.MR.FRAG.60.{folio})"]},
+            "items": [canvas_ref(all_canvases[i]) for i in idxs],
+        }
+        for folio, idxs in osu_folio_defs
+    ],
+}
+
+cma_range = {
+    "id":    range_id("cma"),
+    "type":  "Range",
+    "label": {"en": ["The Cleveland Museum of Art"]},
+    "items": [{
+        "id":    range_id("cma-folio-1"),
+        "type":  "Range",
+        "label": {"en": ["Leaf from a Psalter: Historiated Initial D with The Trinity (acc. 1999.125)"]},
+        "items": [canvas_ref(all_canvases[24])],
+    }],
+}
+
+top_range = {
+    "id":          range_id("top"),
+    "type":        "Range",
+    "label":       {"en": ["Iken Psalter Fragments"]},
+    "viewingHint": "top",
+    "items":       [yale_range, osu_range, cma_range],
+}
+
+combined["structures"] = collect_ranges(top_range)
 
 # ── Write output ──────────────────────────────────────────────────────────────
 
@@ -339,7 +427,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 total = len(combined["items"])
 print(f"Written: {OUTPUT_FILE}")
-print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)}, Cleveland: {len(cleveland_canvases)})")
+print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)}, CMA: {len(cma_canvases)})")
 print("\nCanvas labels:")
 for c in combined["items"]:
     print(f"  {list(c['label'].values())[0][0]}")
