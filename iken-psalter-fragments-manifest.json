@@ -938,7 +938,7 @@
       "type": "Agent",
       "label": {
         "en": [
-          "Yale University Library; The Ohio State University Libraries; The Cleveland Museum of Art"
+          "Yale University Library; The Ohio State University Libraries"
         ]
       },
       "homepage": [
@@ -2004,5 +2004,312 @@
       ]
     }
   ],
-  "structures": []
+  "structures": [
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/top",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Iken Psalter Fragments"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/yale-1",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-1",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-2",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-3",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-3-1",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-4",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-5",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-6",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-7",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-7-10",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-8",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-9",
+          "type": "Range"
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/cleveland-1",
+          "type": "Range"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/yale-1",
+      "type": "Range",
+      "label": {
+        "none": [
+          "Yale, folio 1 (Takamiya MS 136)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394185",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://collections.library.yale.edu/manifests/oid/16371296/canvas/16394186",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-1",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 1 (SPEC.RARE.MS.MR.FRAG.60.1)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-2",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 2 (SPEC.RARE.MS.MR.FRAG.60.2)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-3",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 3 (SPEC.RARE.MS.MR.FRAG.60.3)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-3-1",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 3.1 (SPEC.RARE.MS.MR.FRAG.60.3.1)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-4",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 4 (SPEC.RARE.MS.MR.FRAG.60.4)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-5",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 5 (SPEC.RARE.MS.MR.FRAG.60.5)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-6",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 6 (SPEC.RARE.MS.MR.FRAG.60.6)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-7",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 7 (SPEC.RARE.MS.MR.FRAG.60.7)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-7-10",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 7.10 (SPEC.RARE.MS.MR.FRAG.60.7.10)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-8",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 8 (SPEC.RARE.MS.MR.FRAG.60.8)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/osu-9",
+      "type": "Range",
+      "label": {
+        "none": [
+          "OSU, folio 9 (SPEC.RARE.MS.MR.FRAG.60.9)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h",
+          "type": "Canvas"
+        },
+        {
+          "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/range/cleveland-1",
+      "type": "Range",
+      "label": {
+        "none": [
+          "Cleveland, folio 1 (CMA 1999.125)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+          "type": "Canvas"
+        }
+      ]
+    }
+  ]
 }

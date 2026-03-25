@@ -209,10 +209,15 @@ for idx, item in enumerate(cleveland["items"]):
 # ── OSU canvases — v2 → v3, normalised labels ────────────────────────────────
 
 osu_canvases = []
+osu_folio_ids = {}  # folio label -> [canvas_id, ...]
 for folio, manifest in osu_data:
+    folio_canvas_ids = []
     for seq in manifest.get("sequences", []):
         for canvas_idx, canvas_v2 in enumerate(seq.get("canvases", [])):
-            osu_canvases.append(osu_canvas_to_v3(folio, canvas_v2, canvas_idx))
+            canvas = osu_canvas_to_v3(folio, canvas_v2, canvas_idx)
+            osu_canvases.append(canvas)
+            folio_canvas_ids.append(canvas["id"])
+    osu_folio_ids[folio] = folio_canvas_ids
 
 # ── Metadata ──────────────────────────────────────────────────────────────────
 
@@ -229,6 +234,54 @@ for folio, manifest in osu_data:
         if key not in seen:
             seen.add(key)
             osu_meta_combined.append(entry)
+
+# ── Structures (ranges for viewer navigation) ─────────────────────────────────
+
+RANGE_BASE = MANIFEST_ID + "/range"
+
+def make_range(slug, label, items):
+    return {
+        "id":    f"{RANGE_BASE}/{slug}",
+        "type":  "Range",
+        "label": {"none": [label]},
+        "items": items,
+    }
+
+leaf_ranges = []
+
+# Yale — one bifolium
+leaf_ranges.append(make_range(
+    "yale-1",
+    "Yale, folio 1 (Takamiya MS 136)",
+    [{"id": c["id"], "type": "Canvas"} for c in yale_canvases],
+))
+
+# OSU — one range per folio, preserving order from OSU_FILES
+for folio, _ in OSU_FILES:
+    slug = "osu-" + folio.replace(".", "-")
+    identifier = f"SPEC.RARE.MS.MR.FRAG.60.{folio}"
+    leaf_ranges.append(make_range(
+        slug,
+        f"OSU, folio {folio} ({identifier})",
+        [{"id": cid, "type": "Canvas"} for cid in osu_folio_ids[folio]],
+    ))
+
+# Cleveland — single leaf
+leaf_ranges.append(make_range(
+    "cleveland-1",
+    "Cleveland, folio 1 (CMA 1999.125)",
+    [{"id": c["id"], "type": "Canvas"} for c in cleveland_canvases],
+))
+
+# Top-level range referencing all leaf ranges
+top_range = {
+    "id":    f"{RANGE_BASE}/top",
+    "type":  "Range",
+    "label": {"en": ["Iken Psalter Fragments"]},
+    "items": [{"id": r["id"], "type": "Range"} for r in leaf_ranges],
+}
+
+structures = [top_range] + leaf_ranges
 
 # ── Assemble combined manifest ────────────────────────────────────────────────
 
@@ -276,7 +329,7 @@ combined = {
     "thumbnail": yale.get("thumbnail", []),
     "start": {"id": yale_canvases[0]["id"], "type": "Canvas"},
     "items": yale_canvases + osu_canvases + cleveland_canvases,
-    "structures": [],
+    "structures": structures,
 }
 
 # ── Write output ──────────────────────────────────────────────────────────────
