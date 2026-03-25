@@ -1024,9 +1024,9 @@
                 "width": 5533,
                 "service": [
                   {
-                    "@id": "https://collections.library.yale.edu/iiif/2/16394185",
-                    "@type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
+                    "profile": "http://iiif.io/api/image/2/level2.json",
+                    "id": "https://collections.library.yale.edu/iiif/2/16394185",
+                    "type": "ImageService2"
                   }
                 ]
               }
@@ -1079,9 +1079,9 @@
                 "width": 5516,
                 "service": [
                   {
-                    "@id": "https://collections.library.yale.edu/iiif/2/16394186",
-                    "@type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
+                    "profile": "http://iiif.io/api/image/2/level2.json",
+                    "id": "https://collections.library.yale.edu/iiif/2/16394186",
+                    "type": "ImageService2"
                   }
                 ]
               }
@@ -1127,7 +1127,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/1831cz206",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/1831cz206.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 4021,
@@ -1166,7 +1166,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/1257b553f",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/1257b553f/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/1257b553f.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 4006,
@@ -1205,7 +1205,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/9306tb198.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1244,7 +1244,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/9880w411h",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/9880w411h/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/9880w411h.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1283,7 +1283,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/dj52wj399",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/dj52wj399/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/dj52wj399.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1322,7 +1322,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/4q77g497m",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/4q77g497m/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/4q77g497m.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1361,7 +1361,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/wd376850w",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/wd376850w/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/wd376850w.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 7639,
@@ -1400,7 +1400,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/h702qk01p.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 7640,
@@ -1439,7 +1439,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/d217r2498",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/d217r2498/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/d217r2498.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3222,
@@ -1478,7 +1478,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/g445cr94k",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/g445cr94k/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/g445cr94k.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3199,
@@ -1517,7 +1517,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/x059cm590",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/x059cm590.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1556,7 +1556,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/mc87q357j",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/mc87q357j/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/mc87q357j.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1595,7 +1595,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/rn301d67d",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/rn301d67d.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1634,7 +1634,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/mc87q358t",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/mc87q358t/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/mc87q358t.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1673,7 +1673,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/dv140656w",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/dv140656w.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3185,
@@ -1712,7 +1712,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/qf85nq75t/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/qf85nq75t.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1751,7 +1751,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/ff365j026",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/ff365j026.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 7615,
@@ -1790,7 +1790,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/r207v2202",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/r207v2202/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/r207v2202.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 7646,
@@ -1829,7 +1829,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/gx41mx57q/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/gx41mx57q.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3224,
@@ -1868,7 +1868,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/rn301d68p",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/rn301d68p/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/rn301d68p.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3224,
@@ -1907,7 +1907,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/9019sf50h",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/9019sf50h/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/9019sf50h.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,
@@ -1946,7 +1946,7 @@
               "motivation": "painting",
               "target": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s",
               "body": {
-                "id": "https://library.osu.edu/dc/concern/file_sets/xw42nm98s/full/full/0/default.jpg",
+                "id": "https://library.osu.edu/loris/xw42nm98s.jp2/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 3182,

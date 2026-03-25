@@ -55,6 +55,36 @@ SIDES = ["recto", "verso"]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
+def normalize_service(svc):
+    """Convert v2-style @id/@type service properties to v3 id/type."""
+    if isinstance(svc, list):
+        return [normalize_service(s) for s in svc]
+    out = dict(svc)
+    if "@id" in out:
+        out["id"] = out.pop("@id")
+    if "@type" in out:
+        out["type"] = out.pop("@type")
+    return out
+
+
+def normalize_annotation_pages(pages):
+    """Recursively normalize service properties in annotation pages."""
+    result = []
+    for page in pages:
+        new_page = dict(page)
+        new_items = []
+        for anno in page.get("items", []):
+            new_anno = dict(anno)
+            body = dict(anno.get("body", {}))
+            if "service" in body:
+                body["service"] = normalize_service(body["service"])
+            new_anno["body"] = body
+            new_items.append(new_anno)
+        new_page["items"] = new_items
+        result.append(new_page)
+    return result
+
+
 def make_image_service(service_id):
     """Return a IIIF v3-shaped ImageService2 block."""
     return [{
@@ -81,7 +111,7 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
         svc = res.get("service", {})
         svc_id = svc.get("@id", "")
         body = {
-            "id":     res["@id"] + "/full/full/0/default.jpg",
+            "id":     svc_id + "/full/full/0/default.jpg",
             "type":   "Image",
             "format": res.get("format", "image/jpeg"),
             "width":  res.get("width", canvas_v2["width"]),
@@ -154,7 +184,7 @@ for idx, item in enumerate(yale["items"]):
         "label":  {"none": [label_str]},
         "width":  item["width"],
         "height": item["height"],
-        "items":  item["items"],
+        "items":  normalize_annotation_pages(item["items"]),
     }
     if "thumbnail" in item:
         canvas["thumbnail"] = item["thumbnail"]
