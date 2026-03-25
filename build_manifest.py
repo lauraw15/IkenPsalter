@@ -1,27 +1,33 @@
 """
 build_manifest.py
 -----------------
-Combines Yale (IIIF v3) and OSU (IIIF v2) Psalter fragment manifests
-into a single IIIF v3 compliant manifest.
+Combines Yale (IIIF v3), OSU (IIIF v2), and Cleveland Museum of Art (IIIF v3)
+Psalter fragment manifests into a single IIIF v3 compliant manifest.
 
 Canvas label scheme
 -------------------
-Yale:  yale-folio 1, recto / yale-folio 1, verso
-       Yale has one folio (bifolium); side is inferred from position (0=recto, 1=verso).
+Yale:      yale-folio 1, recto / yale-folio 1, verso
+           Yale has one bifolium; side is inferred from position (0=recto, 1=verso).
 
-OSU:   osu-folio N, recto / osu-folio N, verso
-       Side is inferred from position within the folio sequence (0=recto, 1=verso).
+OSU:       osu-folio N, recto / osu-folio N, verso
+           Side is inferred from position within the folio sequence (0=recto, 1=verso).
+
+Cleveland: cma-folio 1, recto
+           Single leaf, one canvas.
 
 Usage:
-    python3 build_manifest.py
+    Run from the source-manifests/ directory:
 
-    Source JSON files must be in the same directory as this script.
+        cd source-manifests
+        python3 ../build_manifest.py
+
+    Output is written to source-manifests/iken-psalter-fragments-manifest.json.
+    Move it to the repo root before committing:
+
+        mv iken-psalter-fragments-manifest.json ../
 
 Output:
     iken-psalter-fragments-manifest.json
-
-Notes:
-    Update MANIFEST_ID before hosting the output file.
 """
 
 import json
@@ -29,23 +35,22 @@ import re
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-MANIFEST_ID = "https://example.org/iken-psalter-fragments/manifest"  # ← update before hosting
+MANIFEST_ID = "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json"
 
 YALE_FILE = "yale-16371296.json"
-
-CMA_FILE  = "cma-1999.125.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
+CMA_FILE  = "cleveland.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
 
 # OSU source files in desired folio order
 OSU_FILES = [
     ("1",    "osu-1.json"),
     ("2",    "osu-2.json"),
     ("3",    "osu-3.json"),
-    ("3.1",  "osu-3_1.json"),
+    ("3.1",  "osu-3.1.json"),
     ("4",    "osu-4.json"),
     ("5",    "osu-5.json"),
     ("6",    "osu-6.json"),
     ("7",    "osu-7.json"),
-    ("7.10", "osu-7_10.json"),
+    ("7.10", "osu-7.10.json"),
     ("8",    "osu-8.json"),
     ("9",    "osu-9.json"),
 ]
@@ -55,6 +60,36 @@ OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 SIDES = ["recto", "verso"]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+def normalize_service(svc):
+    """Convert v2-style @id/@type service properties to v3 id/type."""
+    if isinstance(svc, list):
+        return [normalize_service(s) for s in svc]
+    out = dict(svc)
+    if "@id" in out:
+        out["id"] = out.pop("@id")
+    if "@type" in out:
+        out["type"] = out.pop("@type")
+    return out
+
+
+def normalize_annotation_pages(pages):
+    """Normalize service properties in annotation pages from v2 to v3 style."""
+    result = []
+    for page in pages:
+        new_page = dict(page)
+        new_items = []
+        for anno in page.get("items", []):
+            new_anno = dict(anno)
+            body = dict(anno.get("body", {}))
+            if "service" in body:
+                body["service"] = normalize_service(body["service"])
+            new_anno["body"] = body
+            new_items.append(new_anno)
+        new_page["items"] = new_items
+        result.append(new_page)
+    return result
+
 
 def make_image_service(service_id):
     """Return a IIIF v3-shaped ImageService2 block."""
@@ -82,7 +117,7 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
         svc = res.get("service", {})
         svc_id = svc.get("@id", "")
         body = {
-            "id":     res["@id"] + "/full/full/0/default.jpg",
+            "id":     svc_id + "/full/full/0/default.jpg",
             "type":   "Image",
             "format": res.get("format", "image/jpeg"),
             "width":  res.get("width", canvas_v2["width"]),
@@ -155,7 +190,7 @@ for idx, item in enumerate(yale["items"]):
         "label":  {"none": [label_str]},
         "width":  item["width"],
         "height": item["height"],
-        "items":  item["items"],
+        "items":  normalize_annotation_pages(item["items"]),
     }
     if "thumbnail" in item:
         canvas["thumbnail"] = item["thumbnail"]
@@ -288,8 +323,6 @@ cma_canvases[0]["homepage"] = [
         "label":  {"en": ["Internet Archive digitization page"]},
     },
 ]
-
-
 
 combined = {
     "@context": "http://iiif.io/api/presentation/3/context.json",
