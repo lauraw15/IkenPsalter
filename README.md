@@ -52,13 +52,12 @@ The Jeanne Miles Blackburn Collection.
 ---
 
 ## Repository Contents
-
 ```
 IkenPsalter/
 ├── README.md
 ├── iken-psalter-fragments-manifest.json   # Combined IIIF v3 manifest
 ├── build_manifest.py                      # Script to regenerate the manifest
-└── source-manifests/                      # Original IIIF manifests (optional)
+└── source-manifests/                      # Original IIIF manifests
     ├── yale-16371296.json                 # Yale v3 manifest
     ├── osu-1.json … osu-9.json           # OSU v2 manifests
     ├── osu-3_1.json
@@ -77,7 +76,6 @@ IkenPsalter/
 - Cleveland Museum of Art leaf comes last
 
 Canvas labels follow a consistent `institution-folio N, recto/verso` scheme:
-
 ```
 yale-folio 1, recto
 yale-folio 1, verso
@@ -88,27 +86,24 @@ osu-folio 9, verso
 cma-folio 1, recto
 ```
 
-The manifest is compatible with IIIF v3 viewers including [Mirador 3](https://projectmirador.org/) and [Universal Viewer](https://universalviewer.io/).
+The manifest includes a table of contents (`structures`) organised by institution, and each canvas has `seeAlso` and `homepage` links back to the original institutional record.
 
-> **Note:** The manifest `id` field is currently set to a placeholder URL. If you host this file, update the `"id"` value at the top of the JSON (and the `MANIFEST_ID` constant in `build_manifest.py`) to match the file's actual served URL.
+The manifest is compatible with IIIF v3 viewers including [Mirador 3](https://projectmirador.org/) and [Universal Viewer](https://universalviewer.io/).
 
 ### View in Mirador
 
-You can load the manifest directly into the hosted Mirador demo:
-
 1. Go to [https://projectmirador.org/demo/](https://projectmirador.org/demo/)
 2. Click **Add resource**
-3. Paste the raw GitHub URL for the manifest:
-   ```
-   https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json
-   ```
+3. Paste the manifest URL:
+```
+   https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json
+```
 
 ---
 
 ## Regenerating the Manifest
 
 If the source manifests change, the combined manifest can be rebuilt using the included Python script. No third-party dependencies are required — only the Python standard library.
-
 ```bash
 # Place all source JSON files in the same directory as the script, then:
 python3 build_manifest.py
