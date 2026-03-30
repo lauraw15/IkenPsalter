@@ -1,6 +1,6 @@
 # Iken Psalter Fragments
 
-A combined IIIF presentation of dispersed manuscript fragments from a Latin Psalter (circa 1290–1310), possibly written for the church of St. Botolph, Iken, in Suffolk, England. Fragments are held at three institutions — Yale University's Beinecke Rare Book and Manuscript Library, The Ohio State University's Rare Books and Manuscripts Library, and the Cleveland Museum of Art — and are here united into a single IIIF v3 manifest for viewing and research.
+A combined IIIF presentation of dispersed manuscript fragments from a Latin Psalter (circa 1290–1310), possibly written for the church of St. Botolph, Iken, in Suffolk, England. Fragments are held at three institutions — Yale University's Beinecke Rare Book and Manuscript Library, The Ohio State University's Rare Books and Manuscripts Library, and The Cleveland Museum of Art — and are here united into a single IIIF v3 manifest for viewing and research.
 
 ---
 
@@ -39,15 +39,15 @@ Eleven parchment bifolium fragments (22 canvases), catalogued as individual foli
 
 - [OSU Digital Collections](https://library.osu.edu/dc)
 
-### Cleveland Museum of Art
-**1999.125**
+### The Cleveland Museum of Art
+**Acc. 1999.125 — Leaf from a Psalter: Historiated Initial D with The Trinity**
 
-A single parchment leaf (26.7 × 17.5 cm) with a **historiated initial D** depicting the Trinity, introducing Psalm 109 (*Dixit dominus domino*). Attributed to a follower of the **Master of the Queen Mary Psalter**, working in East Anglia, c. 1310. Ink, tempera, and gold on vellum.
+A single decorated leaf (26.7 × 17.5 cm), ink, tempera and gold on vellum, attributed to the **Master of the Queen Mary Psalter** (England, East Anglia, c. 1310). The leaf contains a large historiated initial D introducing Psalm 109 (*Dixit dominus domino*), within which the Trinity is depicted. Provenance traces directly to the parish church of St. Botulph at Iken in Suffolk, confirming the connection to the other fragments in this collection.
 
-Provenance: Parish church of St. Botulph at Iken in Suffolk; Sotheby's, London, 10 December 1969 (lot 36); Bruce Ferrini, Akron. Acquired as part of The Jeanne Miles Blackburn Collection.
+The Jeanne Miles Blackburn Collection.
 
 - [Cleveland Museum of Art record](https://www.clevelandart.org/art/1999.125)
-- [Internet Archive (IIIF source)](https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter)
+- [Internet Archive digitization](https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter)
 
 ---
 
@@ -61,9 +61,9 @@ IkenPsalter/
 └── source-manifests/                      # Original IIIF manifests (optional)
     ├── yale-16371296.json                 # Yale v3 manifest
     ├── osu-1.json … osu-9.json           # OSU v2 manifests
-    ├── osu-3.1.json
-    ├── osu-7.10.json
-    └── cleveland.json                     # Cleveland Museum of Art v3 manifest
+    ├── osu-3_1.json
+    ├── osu-7_10.json
+    └── cma-1999.125.json                  # Cleveland Museum of Art v3 manifest
 ```
 
 ---
@@ -74,9 +74,23 @@ IkenPsalter/
 
 - Yale canvases (recto + verso) come first
 - OSU folios follow in order: 1, 2, 3, 3.1, 4, 5, 6, 7, 7.10, 8, 9
-- Cleveland leaf (recto) comes last
+- Cleveland Museum of Art leaf comes last
+
+Canvas labels follow a consistent `institution-folio N, recto/verso` scheme:
+
+```
+yale-folio 1, recto
+yale-folio 1, verso
+osu-folio 1, recto
+osu-folio 1, verso
+...
+osu-folio 9, verso
+cma-folio 1, recto
+```
 
 The manifest is compatible with IIIF v3 viewers including [Mirador 3](https://projectmirador.org/) and [Universal Viewer](https://universalviewer.io/).
+
+> **Note:** The manifest `id` field is currently set to a placeholder URL. If you host this file, update the `"id"` value at the top of the JSON (and the `MANIFEST_ID` constant in `build_manifest.py`) to match the file's actual served URL.
 
 ### View in Mirador
 
@@ -95,15 +109,12 @@ You can load the manifest directly into the hosted Mirador demo:
 
 If the source manifests change, the combined manifest can be rebuilt using the included Python script. No third-party dependencies are required — only the Python standard library.
 
-Run from inside the `source-manifests/` directory, then move the output to the repo root:
-
 ```bash
-cd source-manifests
-python3 ../build_manifest.py
-mv iken-psalter-fragments-manifest.json ../
+# Place all source JSON files in the same directory as the script, then:
+python3 build_manifest.py
 ```
 
-The script will print a canvas count summary and list all canvas labels on completion.
+The script will write a fresh `iken-psalter-fragments-manifest.json` to the current directory and print a canvas count summary.
 
 ---
 
@@ -113,7 +124,7 @@ The script will print a canvas count summary and list all canvas labels on compl
 
 **OSU (SPEC.RARE.MS.MR.FRAG.60.1–9):** Images are published under [No Copyright — United States (NoC-US)](http://rightsstatements.org/vocab/NoC-US/1.0/).
 
-**Cleveland Museum of Art (1999.125):** Images are published under [CC0 1.0 Universal (Public Domain Dedication)](http://creativecommons.org/publicdomain/zero/1.0/).
+**CMA (acc. 1999.125):** Image published under [CC0 1.0 Public Domain Dedication](http://creativecommons.org/publicdomain/zero/1.0/).
 
 ---
 
@@ -123,7 +134,7 @@ The script will print a canvas count summary and list all canvas labels on compl
 
 > *Psalter fragments* (SPEC.RARE.MS.MR.FRAG.60.1–9). Rare Books and Manuscripts Library, The Ohio State University Libraries.
 
-> *Leaf from a Psalter: Historiated Initial D with The Trinity* (1999.125). The Jeanne Miles Blackburn Collection, Cleveland Museum of Art.
+> *Leaf from a Psalter: Historiated Initial D with The Trinity* (acc. 1999.125). The Jeanne Miles Blackburn Collection, The Cleveland Museum of Art.
 
 ---
 
