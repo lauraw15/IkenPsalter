@@ -335,7 +335,8 @@ combined = {
     ],
     "thumbnail": yale.get("thumbnail", []),
     "start": {"id": yale_canvases[0]["id"], "type": "Canvas"},
-    "items": yale_canvases + osu_canvases + cma_canvases,
+    # Reconstruction order: Yale, OSU 1–5, Cleveland, OSU 6–9
+    "items": yale_canvases + osu_canvases[:12] + cma_canvases + osu_canvases[12:],
     "structures": [],  # populated below
 }
 
@@ -376,11 +377,12 @@ osu_folio_defs = [
     ("3.1",  [8,  9]),
     ("4",    [10, 11]),
     ("5",    [12, 13]),
-    ("6",    [14, 15]),
-    ("7",    [16, 17]),
-    ("7.10", [18, 19]),
-    ("8",    [20, 21]),
-    ("9",    [22, 23]),
+    # Cleveland canvas at index 14
+    ("6",    [15, 16]),
+    ("7",    [17, 18]),
+    ("7.10", [19, 20]),
+    ("8",    [21, 22]),
+    ("9",    [23, 24]),
 ]
 
 osu_range = {
@@ -406,7 +408,7 @@ cma_range = {
         "id":    range_id("cma-folio-1"),
         "type":  "Range",
         "label": {"en": ["Leaf from a Psalter: Historiated Initial D with The Trinity (acc. 1999.125)"]},
-        "items": [canvas_ref(all_canvases[24])],
+        "items": [canvas_ref(all_canvases[14])],
     }],
 }
 

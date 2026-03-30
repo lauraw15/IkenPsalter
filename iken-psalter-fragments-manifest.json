@@ -1925,6 +1925,79 @@
       ]
     },
     {
+      "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "cma-folio 1, recto"
+        ]
+      },
+      "width": 1332,
+      "height": 2048,
+      "items": [
+        {
+          "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotationPage/1",
+          "items": [
+            {
+              "body": {
+                "format": "image/jpeg",
+                "height": 2048,
+                "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif/full/max/0/default.jpg",
+                "service": [
+                  {
+                    "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif",
+                    "profile": "level2",
+                    "type": "ImageService3"
+                  }
+                ],
+                "type": "Image",
+                "width": 1332
+              },
+              "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotation/1",
+              "motivation": "painting",
+              "target": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+              "type": "Annotation"
+            }
+          ],
+          "type": "AnnotationPage"
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https://archive.org/metadata/clevelandart-1999.125-leaf-from-a-psalter",
+          "type": "Dataset",
+          "format": "application/json",
+          "label": {
+            "en": [
+              "Internet Archive item metadata (CMA acc. 1999.125)"
+            ]
+          }
+        }
+      ],
+      "homepage": [
+        {
+          "id": "https://www.clevelandart.org/art/1999.125",
+          "type": "Text",
+          "format": "text/html",
+          "label": {
+            "en": [
+              "Cleveland Museum of Art collection record"
+            ]
+          }
+        },
+        {
+          "id": "https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter",
+          "type": "Text",
+          "format": "text/html",
+          "label": {
+            "en": [
+              "Internet Archive digitization page"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/rn301d67d",
       "type": "Canvas",
       "label": {
@@ -2559,79 +2632,6 @@
           "label": {
             "en": [
               "OSU Libraries permanent link (SPEC.RARE.MS.MR.FRAG.60.9)"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "cma-folio 1, recto"
-        ]
-      },
-      "width": 1332,
-      "height": 2048,
-      "items": [
-        {
-          "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotationPage/1",
-          "items": [
-            {
-              "body": {
-                "format": "image/jpeg",
-                "height": 2048,
-                "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif/full/max/0/default.jpg",
-                "service": [
-                  {
-                    "id": "https://iiif.archive.org/image/iiif/3/clevelandart-1999.125-leaf-from-a-psalter%2F1999.125_full.tif",
-                    "profile": "level2",
-                    "type": "ImageService3"
-                  }
-                ],
-                "type": "Image",
-                "width": 1332
-              },
-              "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/annotation/1",
-              "motivation": "painting",
-              "target": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
-              "type": "Annotation"
-            }
-          ],
-          "type": "AnnotationPage"
-        }
-      ],
-      "seeAlso": [
-        {
-          "id": "https://archive.org/metadata/clevelandart-1999.125-leaf-from-a-psalter",
-          "type": "Dataset",
-          "format": "application/json",
-          "label": {
-            "en": [
-              "Internet Archive item metadata (CMA acc. 1999.125)"
-            ]
-          }
-        }
-      ],
-      "homepage": [
-        {
-          "id": "https://www.clevelandart.org/art/1999.125",
-          "type": "Text",
-          "format": "text/html",
-          "label": {
-            "en": [
-              "Cleveland Museum of Art collection record"
-            ]
-          }
-        },
-        {
-          "id": "https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter",
-          "type": "Text",
-          "format": "text/html",
-          "label": {
-            "en": [
-              "Internet Archive digitization page"
             ]
           }
         }
