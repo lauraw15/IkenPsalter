@@ -1,12 +1,12 @@
 # Iken Psalter Fragments
 
-A combined IIIF presentation of dispersed manuscript fragments from a Latin Psalter (circa 1290–1310), possibly written for the church of St. Botolph, Iken, in Suffolk, England. Fragments are held at three institutions — Yale University's Beinecke Rare Book and Manuscript Library, The Ohio State University's Rare Books and Manuscripts Library, and The Cleveland Museum of Art — and are here united into a single IIIF v3 manifest for viewing and research.
+A combined IIIF presentation of dispersed manuscript fragments from a Latin Psalter (circa 1290–1310), possibly written for the church of St. Botolph, Iken, in Suffolk, England. Fragments are held at multiple institutions and private collections — Yale University's Beinecke Rare Book and Manuscript Library, The Ohio State University's Rare Books and Manuscripts Library, The Cleveland Museum of Art, Stanford University Libraries, Cornell University Library, and private collectors in Central Ohio — and are here united into a single IIIF v3 manifest for viewing and research.
 
 ---
 
 ## About the Manuscript
 
-The base manuscript is a Latin Psalter produced in England around 1290–1310, written on parchment. Its surviving leaves are now distributed across three collections:
+The base manuscript is a Latin Psalter produced in England around 1290–1310, written on parchment. Its surviving leaves are now distributed across multiple collections:
 
 ### Yale University — Beinecke Rare Book and Manuscript Library
 **Takamiya MS 136**
@@ -49,6 +49,26 @@ The Jeanne Miles Blackburn Collection.
 - [Cleveland Museum of Art record](https://www.clevelandart.org/art/1999.125)
 - [Internet Archive digitization](https://archive.org/details/clevelandart-1999.125-leaf-from-a-psalter)
 
+### Stanford University Libraries
+**MISC 1989** and **MISC 2953**
+
+Two fragments held at Stanford University Libraries. Digital images are not yet included in the combined manifest.
+
+### Private Collections — Central Ohio
+**Private OH 1** and **Private OH 2**
+
+Two fragments held by private collectors in Central Ohio. These are not digitized and are not included in the combined manifest.
+
+### Cornell University Library
+**80.052.001a-h** and **80.052.002a-h**
+
+Two fragments held at Cornell University Library in Ithaca, New York. Digital images are not yet included in the combined manifest.
+
+### The Ohio State University — Rare Books and Manuscripts Library
+**MS MR.Frag.60.3a**
+
+An additional fragment held at OSU. Digital images are not yet included in the combined manifest.
+
 ---
 
 ## Repository Contents
@@ -60,9 +80,9 @@ IkenPsalter/
 └── source-manifests/                      # Original IIIF manifests
     ├── yale-16371296.json                 # Yale v3 manifest
     ├── osu-1.json … osu-9.json           # OSU v2 manifests
-    ├── osu-3_1.json
-    ├── osu-7_10.json
-    └── cma-1999.125.json                  # Cleveland Museum of Art v3 manifest
+    ├── osu-3.1.json
+    ├── osu-7.10.json
+    └── cleveland.json                     # Cleveland Museum of Art v3 manifest
 ```
 
 ---
@@ -72,8 +92,9 @@ IkenPsalter/
 **`iken-psalter-fragments-manifest.json`** is a single IIIF Presentation API v3 manifest containing all 25 canvases in one sequence:
 
 - Yale canvases (recto + verso) come first
-- OSU folios follow in order: 1, 2, 3, 3.1, 4, 5, 6, 7, 7.10, 8, 9
-- Cleveland Museum of Art leaf comes last
+- OSU folios 1–5 follow in order: 1, 2, 3, 3.1, 4, 5
+- Cleveland Museum of Art leaf
+- OSU folios 6–9 follow in order: 6, 7, 7.10, 8, 9
 
 Canvas labels follow a consistent `institution-folio N, recto/verso` scheme:
 ```
@@ -96,7 +117,7 @@ The manifest is compatible with IIIF v3 viewers including [Mirador 3](https://pr
 2. Click **Add resource**
 3. Paste the manifest URL:
 ```
-   https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json
+   https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json
 ```
 
 ---
