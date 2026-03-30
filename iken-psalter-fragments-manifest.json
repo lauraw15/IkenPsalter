@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://example.org/iken-psalter-fragments/manifest",
+  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -931,7 +931,7 @@
       ]
     }
   },
-  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rights": "http://creativecommons.org/publicdomain/zero/1.0/",
   "provider": [
     {
       "id": "https://github.com/lauraw15/IkenPsalter",
@@ -2640,7 +2640,7 @@
   ],
   "structures": [
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-top",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-top",
       "type": "Range",
       "label": {
         "en": [
@@ -2650,7 +2650,7 @@
       "viewingHint": "top",
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-yale",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-yale",
           "type": "Range",
           "label": {
             "en": [
@@ -2659,7 +2659,7 @@
           },
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-yale-folio-1",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-yale-folio-1",
               "type": "Range",
               "label": {
                 "en": [
@@ -2680,7 +2680,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu",
           "type": "Range",
           "label": {
             "en": [
@@ -2689,7 +2689,7 @@
           },
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-1",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-1",
               "type": "Range",
               "label": {
                 "en": [
@@ -2708,7 +2708,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-2",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-2",
               "type": "Range",
               "label": {
                 "en": [
@@ -2727,7 +2727,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3",
               "type": "Range",
               "label": {
                 "en": [
@@ -2746,7 +2746,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
               "type": "Range",
               "label": {
                 "en": [
@@ -2765,7 +2765,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-4",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-4",
               "type": "Range",
               "label": {
                 "en": [
@@ -2784,7 +2784,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-5",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-5",
               "type": "Range",
               "label": {
                 "en": [
@@ -2803,7 +2803,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-6",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-6",
               "type": "Range",
               "label": {
                 "en": [
@@ -2822,7 +2822,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7",
               "type": "Range",
               "label": {
                 "en": [
@@ -2841,7 +2841,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
               "type": "Range",
               "label": {
                 "en": [
@@ -2860,7 +2860,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-8",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-8",
               "type": "Range",
               "label": {
                 "en": [
@@ -2879,7 +2879,7 @@
               ]
             },
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-9",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-9",
               "type": "Range",
               "label": {
                 "en": [
@@ -2900,7 +2900,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-cma",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-cma",
           "type": "Range",
           "label": {
             "en": [
@@ -2909,7 +2909,7 @@
           },
           "items": [
             {
-              "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-cma-folio-1",
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-cma-folio-1",
               "type": "Range",
               "label": {
                 "en": [
@@ -2928,7 +2928,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-yale",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-yale",
       "type": "Range",
       "label": {
         "en": [
@@ -2937,7 +2937,7 @@
       },
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-yale-folio-1",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-yale-folio-1",
           "type": "Range",
           "label": {
             "en": [
@@ -2958,7 +2958,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-yale-folio-1",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-yale-folio-1",
       "type": "Range",
       "label": {
         "en": [
@@ -2977,7 +2977,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu",
       "type": "Range",
       "label": {
         "en": [
@@ -2986,7 +2986,7 @@
       },
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-1",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-1",
           "type": "Range",
           "label": {
             "en": [
@@ -3005,7 +3005,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-2",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-2",
           "type": "Range",
           "label": {
             "en": [
@@ -3024,7 +3024,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3",
           "type": "Range",
           "label": {
             "en": [
@@ -3043,7 +3043,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
           "type": "Range",
           "label": {
             "en": [
@@ -3062,7 +3062,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-4",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-4",
           "type": "Range",
           "label": {
             "en": [
@@ -3081,7 +3081,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-5",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-5",
           "type": "Range",
           "label": {
             "en": [
@@ -3100,7 +3100,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-6",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-6",
           "type": "Range",
           "label": {
             "en": [
@@ -3119,7 +3119,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7",
           "type": "Range",
           "label": {
             "en": [
@@ -3138,7 +3138,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
           "type": "Range",
           "label": {
             "en": [
@@ -3157,7 +3157,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-8",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-8",
           "type": "Range",
           "label": {
             "en": [
@@ -3176,7 +3176,7 @@
           ]
         },
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-9",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-9",
           "type": "Range",
           "label": {
             "en": [
@@ -3197,7 +3197,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-1",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-1",
       "type": "Range",
       "label": {
         "en": [
@@ -3216,7 +3216,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-2",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-2",
       "type": "Range",
       "label": {
         "en": [
@@ -3235,7 +3235,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3",
       "type": "Range",
       "label": {
         "en": [
@@ -3254,7 +3254,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-3-1",
       "type": "Range",
       "label": {
         "en": [
@@ -3273,7 +3273,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-4",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-4",
       "type": "Range",
       "label": {
         "en": [
@@ -3292,7 +3292,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-5",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-5",
       "type": "Range",
       "label": {
         "en": [
@@ -3311,7 +3311,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-6",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-6",
       "type": "Range",
       "label": {
         "en": [
@@ -3330,7 +3330,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7",
       "type": "Range",
       "label": {
         "en": [
@@ -3349,7 +3349,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-7-10",
       "type": "Range",
       "label": {
         "en": [
@@ -3368,7 +3368,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-8",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-8",
       "type": "Range",
       "label": {
         "en": [
@@ -3387,7 +3387,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-osu-folio-9",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-osu-folio-9",
       "type": "Range",
       "label": {
         "en": [
@@ -3406,7 +3406,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-cma",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-cma",
       "type": "Range",
       "label": {
         "en": [
@@ -3415,7 +3415,7 @@
       },
       "items": [
         {
-          "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-cma-folio-1",
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-cma-folio-1",
           "type": "Range",
           "label": {
             "en": [
@@ -3432,7 +3432,7 @@
       ]
     },
     {
-      "id": "https://lauraw15.github.io/IkenPsalter/iken-psalter-fragments-manifest.json#range-cma-folio-1",
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-cma-folio-1",
       "type": "Range",
       "label": {
         "en": [

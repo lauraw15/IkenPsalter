@@ -29,23 +29,23 @@ import re
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-MANIFEST_ID = "https://example.org/iken-psalter-fragments/manifest"  # ← update before hosting
+MANIFEST_ID = "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json"
 
 YALE_FILE = "yale-16371296.json"
 
-CMA_FILE  = "cma-1999.125.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
+CMA_FILE  = "cleveland.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
 
 # OSU source files in desired folio order
 OSU_FILES = [
     ("1",    "osu-1.json"),
     ("2",    "osu-2.json"),
     ("3",    "osu-3.json"),
-    ("3.1",  "osu-3_1.json"),
+    ("3.1",  "osu-3.1.json"),
     ("4",    "osu-4.json"),
     ("5",    "osu-5.json"),
     ("6",    "osu-6.json"),
     ("7",    "osu-7.json"),
-    ("7.10", "osu-7_10.json"),
+    ("7.10", "osu-7.10.json"),
     ("8",    "osu-8.json"),
     ("9",    "osu-9.json"),
 ]
