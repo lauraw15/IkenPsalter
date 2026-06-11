@@ -54,7 +54,7 @@ OSU_FILES = [
 MISSING_FRAGMENTS = [
     {
         "slug": "psalm-1-36",
-        "label": "Missing Psalter folios 1–36 — Psalms 1–36",
+        "label": "Missing Psalter (leaves 1–36) — Psalms 1–36",
         "description": "Large missing opening containing the historiated initial at Psalm 26 (David pointing to his eye).",
     },
     {
@@ -64,7 +64,7 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "psalm-66-68",
-        "label": "Missing Psalter folios 66–68 — Psalms 66–68",
+        "label": "Missing Psalter (leaves 66–68) — Psalms 66–68",
         "description": "Historiated initial at Psalm 68 (David praying in the waters).",
     },
     {
@@ -74,7 +74,7 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "psalm-71-85",
-        "label": "Missing Psalter folios 71–85 — Psalms 71–85",
+        "label": "Missing Psalter (leaves 71–85) — Psalms 71–85",
         "description": "Historiated initial at Psalm 80 (David playing carillon).",
     },
     {
@@ -84,7 +84,7 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "psalm-107-108",
-        "label": "Missing Psalter folios 107–108 — Psalms 107–108",
+        "label": "Missing Psalter (leaves 107–108) — Psalms 107–108",
         "description": "A short gap in the reconstructed sequence before the Cleveland leaf (1999.125).",
     },
     {
@@ -94,12 +94,12 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "psalm-119-128",
-        "label": "Missing Psalter folios 119–128 — Psalms 119–128",
+        "label": "Missing Psalter (leaves 119–128) — Psalms 119–128",
         "description": "A large lacuna in the reconstructed sequence between OSU folio 7 and OSU folio 7.10.",
     },
     {
         "slug": "psalm-135-145",
-        "label": "Missing Psalter folios 135–145 — Psalms 135–145",
+        "label": "Missing Psalter (leaves 135–145) — Psalms 135–145",
         "description": "A gap in the reconstructed sequence before the second private Ohio fragment.",
     },
     {

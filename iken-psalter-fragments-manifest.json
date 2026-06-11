@@ -1161,7 +1161,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 1–36 — Psalms 1–36"
+          "Missing Psalter (leaves 1–36) — Psalms 1–36"
         ]
       },
       "width": 1000,
@@ -1203,7 +1203,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%201%E2%80%9336%20%E2%80%94%20Psalms%201%E2%80%9336",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%201%E2%80%9336%29%20%E2%80%94%20Psalms%201%E2%80%9336",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -1215,7 +1215,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%201%E2%80%9336%20%E2%80%94%20Psalms%201%E2%80%9336",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%201%E2%80%9336%29%20%E2%80%94%20Psalms%201%E2%80%9336",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -1423,7 +1423,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 66–68 — Psalms 66–68"
+          "Missing Psalter (leaves 66–68) — Psalms 66–68"
         ]
       },
       "width": 1000,
@@ -1465,7 +1465,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2066%E2%80%9368%20%E2%80%94%20Psalms%2066%E2%80%9368",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%2066%E2%80%9368%29%20%E2%80%94%20Psalms%2066%E2%80%9368",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -1477,7 +1477,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2066%E2%80%9368%20%E2%80%94%20Psalms%2066%E2%80%9368",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%2066%E2%80%9368%29%20%E2%80%94%20Psalms%2066%E2%80%9368",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -1685,7 +1685,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 71–85 — Psalms 71–85"
+          "Missing Psalter (leaves 71–85) — Psalms 71–85"
         ]
       },
       "width": 1000,
@@ -1727,7 +1727,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2071%E2%80%9385%20%E2%80%94%20Psalms%2071%E2%80%9385",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%2071%E2%80%9385%29%20%E2%80%94%20Psalms%2071%E2%80%9385",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -1739,7 +1739,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2071%E2%80%9385%20%E2%80%94%20Psalms%2071%E2%80%9385",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%2071%E2%80%9385%29%20%E2%80%94%20Psalms%2071%E2%80%9385",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -2331,7 +2331,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 107–108 — Psalms 107–108"
+          "Missing Psalter (leaves 107–108) — Psalms 107–108"
         ]
       },
       "width": 1000,
@@ -2373,7 +2373,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20107%E2%80%93108%20%E2%80%94%20Psalms%20107%E2%80%93108",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20107%E2%80%93108%29%20%E2%80%94%20Psalms%20107%E2%80%93108",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -2385,7 +2385,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20107%E2%80%93108%20%E2%80%94%20Psalms%20107%E2%80%93108",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20107%E2%80%93108%29%20%E2%80%94%20Psalms%20107%E2%80%93108",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -2794,7 +2794,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 119–128 — Psalms 119–128"
+          "Missing Psalter (leaves 119–128) — Psalms 119–128"
         ]
       },
       "width": 1000,
@@ -2836,7 +2836,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20119%E2%80%93128%20%E2%80%94%20Psalms%20119%E2%80%93128",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20119%E2%80%93128%29%20%E2%80%94%20Psalms%20119%E2%80%93128",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -2848,7 +2848,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20119%E2%80%93128%20%E2%80%94%20Psalms%20119%E2%80%93128",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20119%E2%80%93128%29%20%E2%80%94%20Psalms%20119%E2%80%93128",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -2989,7 +2989,7 @@
       "type": "Canvas",
       "label": {
         "none": [
-          "Missing Psalter folios 135–145 — Psalms 135–145"
+          "Missing Psalter (leaves 135–145) — Psalms 135–145"
         ]
       },
       "width": 1000,
@@ -3031,7 +3031,7 @@
               "motivation": "painting",
               "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
               "body": {
-                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20135%E2%80%93145%20%E2%80%94%20Psalms%20135%E2%80%93145",
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20135%E2%80%93145%29%20%E2%80%94%20Psalms%20135%E2%80%93145",
                 "type": "Image",
                 "format": "image/png",
                 "width": 1000,
@@ -3043,7 +3043,7 @@
       ],
       "thumbnail": [
         {
-          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20135%E2%80%93145%20%E2%80%94%20Psalms%20135%E2%80%93145",
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20%28leaves%20135%E2%80%93145%29%20%E2%80%94%20Psalms%20135%E2%80%93145",
           "type": "Image",
           "format": "image/png",
           "width": 300,
@@ -3743,7 +3743,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 1–36 — Psalms 1–36"
+                  "Missing Psalter (leaves 1–36) — Psalms 1–36"
                 ]
               },
               "items": [
@@ -3773,7 +3773,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 66–68 — Psalms 66–68"
+                  "Missing Psalter (leaves 66–68) — Psalms 66–68"
                 ]
               },
               "items": [
@@ -3803,7 +3803,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 71–85 — Psalms 71–85"
+                  "Missing Psalter (leaves 71–85) — Psalms 71–85"
                 ]
               },
               "items": [
@@ -3833,7 +3833,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 107–108 — Psalms 107–108"
+                  "Missing Psalter (leaves 107–108) — Psalms 107–108"
                 ]
               },
               "items": [
@@ -3863,7 +3863,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 119–128 — Psalms 119–128"
+                  "Missing Psalter (leaves 119–128) — Psalms 119–128"
                 ]
               },
               "items": [
@@ -3878,7 +3878,7 @@
               "type": "Range",
               "label": {
                 "en": [
-                  "Missing Psalter folios 135–145 — Psalms 135–145"
+                  "Missing Psalter (leaves 135–145) — Psalms 135–145"
                 ]
               },
               "items": [
@@ -4470,7 +4470,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 1–36 — Psalms 1–36"
+              "Missing Psalter (leaves 1–36) — Psalms 1–36"
             ]
           },
           "items": [
@@ -4500,7 +4500,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 66–68 — Psalms 66–68"
+              "Missing Psalter (leaves 66–68) — Psalms 66–68"
             ]
           },
           "items": [
@@ -4530,7 +4530,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 71–85 — Psalms 71–85"
+              "Missing Psalter (leaves 71–85) — Psalms 71–85"
             ]
           },
           "items": [
@@ -4560,7 +4560,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 107–108 — Psalms 107–108"
+              "Missing Psalter (leaves 107–108) — Psalms 107–108"
             ]
           },
           "items": [
@@ -4590,7 +4590,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 119–128 — Psalms 119–128"
+              "Missing Psalter (leaves 119–128) — Psalms 119–128"
             ]
           },
           "items": [
@@ -4605,7 +4605,7 @@
           "type": "Range",
           "label": {
             "en": [
-              "Missing Psalter folios 135–145 — Psalms 135–145"
+              "Missing Psalter (leaves 135–145) — Psalms 135–145"
             ]
           },
           "items": [
@@ -4667,7 +4667,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 1–36 — Psalms 1–36"
+          "Missing Psalter (leaves 1–36) — Psalms 1–36"
         ]
       },
       "items": [
@@ -4697,7 +4697,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 66–68 — Psalms 66–68"
+          "Missing Psalter (leaves 66–68) — Psalms 66–68"
         ]
       },
       "items": [
@@ -4727,7 +4727,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 71–85 — Psalms 71–85"
+          "Missing Psalter (leaves 71–85) — Psalms 71–85"
         ]
       },
       "items": [
@@ -4757,7 +4757,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 107–108 — Psalms 107–108"
+          "Missing Psalter (leaves 107–108) — Psalms 107–108"
         ]
       },
       "items": [
@@ -4787,7 +4787,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 119–128 — Psalms 119–128"
+          "Missing Psalter (leaves 119–128) — Psalms 119–128"
         ]
       },
       "items": [
@@ -4802,7 +4802,7 @@
       "type": "Range",
       "label": {
         "en": [
-          "Missing Psalter folios 135–145 — Psalms 135–145"
+          "Missing Psalter (leaves 135–145) — Psalms 135–145"
         ]
       },
       "items": [
