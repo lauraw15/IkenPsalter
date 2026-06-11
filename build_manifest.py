@@ -26,33 +26,104 @@ Notes:
 
 import json
 import re
+import urllib.parse
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
 MANIFEST_ID = "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json"
 
-YALE_FILE = "yale-16371296.json"
+YALE_FILE = "source-manifests/yale-16371296.json"
 
-CMA_FILE  = "cleveland.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
+CMA_FILE  = "source-manifests/cleveland.json"  # Cleveland Museum of Art — single leaf, already IIIF v3
 
 # OSU source files in desired folio order
 OSU_FILES = [
-    ("1",    "osu-1.json"),
-    ("2",    "osu-2.json"),
-    ("3",    "osu-3.json"),
-    ("3.1",  "osu-3.1.json"),
-    ("4",    "osu-4.json"),
-    ("5",    "osu-5.json"),
-    ("6",    "osu-6.json"),
-    ("7",    "osu-7.json"),
-    ("7.10", "osu-7.10.json"),
-    ("8",    "osu-8.json"),
-    ("9",    "osu-9.json"),
+    ("1",    "source-manifests/osu-1.json"),
+    ("2",    "source-manifests/osu-2.json"),
+    ("3",    "source-manifests/osu-3.json"),
+    ("3.1",  "source-manifests/osu-3.1.json"),
+    ("4",    "source-manifests/osu-4.json"),
+    ("5",    "source-manifests/osu-5.json"),
+    ("6",    "source-manifests/osu-6.json"),
+    ("7",    "source-manifests/osu-7.json"),
+    ("7.10", "source-manifests/osu-7.10.json"),
+    ("8",    "source-manifests/osu-8.json"),
+    ("9",    "source-manifests/osu-9.json"),
+]
+
+MISSING_FRAGMENTS = [
+    {
+        "slug": "psalm-1-36",
+        "label": "Missing Psalter folios 1–36",
+        "description": "Large missing opening containing the historiated initial at Psalm 26 (David pointing to his eye).",
+    },
+    {
+        "slug": "cornell-002a-h",
+        "label": "Cornell University Library fragment 80.052.002a–h (not yet digitized)",
+        "description": "A reconstructed Cornell quire believed to follow OSU folio 1 and precede Stanford MISC 1989.",
+    },
+    {
+        "slug": "psalm-66-68",
+        "label": "Missing Psalter folios 66–68",
+        "description": "Historiated initial at Psalm 68 (David praying in the waters).",
+    },
+    {
+        "slug": "stanford-misc-1989",
+        "label": "Stanford University Libraries MISC 1989 (not yet digitized)",
+        "description": "A fragment held at Stanford University Libraries that is recognized as part of the Iken Psalter.",
+    },
+    {
+        "slug": "psalm-71-85",
+        "label": "Missing Psalter folios 71–85",
+        "description": "Historiated initial at Psalm 80 (David playing carillon).",
+    },
+    {
+        "slug": "cornell-001a-h",
+        "label": "Cornell University Library fragment 80.052.001a–h (not yet digitized)",
+        "description": "A reconstructed Cornell quire believed to follow OSU folio 4 and precede OSU folio 5.",
+    },
+    {
+        "slug": "psalm-107-108",
+        "label": "Missing Psalter folios 107–108",
+        "description": "A short gap in the reconstructed sequence before the Cleveland leaf (1999.125).",
+    },
+    {
+        "slug": "private-oh-1",
+        "label": "Private Ohio collection fragment 1 (not yet digitized)",
+        "description": "A private Ohio Iken Psalter fragment believed to follow OSU folio 6.",
+    },
+    {
+        "slug": "psalm-119-128",
+        "label": "Missing Psalter folios 119–128",
+        "description": "A large lacuna in the reconstructed sequence between OSU folio 7 and OSU folio 7.10.",
+    },
+    {
+        "slug": "psalm-135-145",
+        "label": "Missing Psalter folios 135–145",
+        "description": "A gap in the reconstructed sequence before the second private Ohio fragment.",
+    },
+    {
+        "slug": "private-oh-2",
+        "label": "Private Ohio collection fragment 2 (not yet digitized)",
+        "description": "A private Ohio Iken Psalter fragment that is recognized as part of the manuscript.",
+    },
+    {
+        "slug": "stanford-misc-2953",
+        "label": "Stanford University Libraries MISC 2953 (not yet digitized)",
+        "description": "A fragment held at Stanford University Libraries that is recognized as part of the Iken Psalter.",
+    },
+    {
+        "slug": "osu-3a",
+        "label": "OSU additional fragment MS MR.Frag.60.3a (not yet digitized)",
+        "description": "An additional OSU Iken Psalter fragment that is known from catalog records but does not yet have an available image manifest.",
+    },
 ]
 
 OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 
 SIDES = ["recto", "verso"]
+
+BLANK_PAGE_IMAGE = "https://via.placeholder.com/1000x1400.png?text="
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -128,6 +199,55 @@ def osu_metadata_to_v3(meta_list):
         if vals:
             out.append({"label": {"en": [label]}, "value": {"none": vals}})
     return out
+
+
+def make_placeholder_canvas(slug, label, description, width=1000, height=1400):
+    canvas_id = f"{MANIFEST_ID}/canvas/missing-{slug}"
+    # Create a placeholder image URL that includes a URL-encoded short label
+    label_text = urllib.parse.quote(label)
+    image_url = f"{BLANK_PAGE_IMAGE}{label_text}"
+    return {
+        "id":    canvas_id,
+        "type":  "Canvas",
+        "label": {"none": [label]},
+        "width": width,
+        "height": height,
+        "metadata": [
+            {"label": {"en": ["Status"]}, "value": {"en": ["Not yet digitized"]}},
+            {"label": {"en": ["Description"]}, "value": {"en": [description]}},
+        ],
+        "items": [
+            {
+                "id":    canvas_id + "/page",
+                "type":  "AnnotationPage",
+                "items": [
+                    {
+                        "id":         canvas_id + "/annotation",
+                        "type":       "Annotation",
+                        "motivation": "painting",
+                        "target":     canvas_id,
+                        "body": {
+                            "id":     image_url,
+                            "type":   "Image",
+                            "format": "image/png",
+                            "width":  width,
+                            "height": height,
+                        },
+                    }
+                ],
+            }
+        ],
+        # Provide a thumbnail so viewers (including Mirador) show a preview
+        "thumbnail": [
+            {
+                "id": image_url,
+                "type": "Image",
+                "format": "image/png",
+                "width": int(width * 0.3),
+                "height": int(height * 0.3),
+            }
+        ],
+    }
 
 # ── Load sources ──────────────────────────────────────────────────────────────
 
@@ -291,6 +411,53 @@ cma_canvases[0]["homepage"] = [
 
 
 
+placeholder_canvases_map = {
+    fragment["slug"]: make_placeholder_canvas(fragment["slug"], fragment["label"], fragment["description"])
+    for fragment in MISSING_FRAGMENTS
+}
+placeholder_canvases = [placeholder_canvases_map[fragment["slug"]] for fragment in MISSING_FRAGMENTS]
+
+reconstruction_items = [
+    yale_canvases[0],
+    yale_canvases[1],
+    placeholder_canvases_map["psalm-1-36"],
+    osu_canvases[0],
+    osu_canvases[1],
+    placeholder_canvases_map["cornell-002a-h"],
+    placeholder_canvases_map["psalm-66-68"],
+    placeholder_canvases_map["stanford-misc-1989"],
+    osu_canvases[2],
+    osu_canvases[3],
+    placeholder_canvases_map["psalm-71-85"],
+    osu_canvases[4],
+    osu_canvases[5],
+    osu_canvases[6],
+    osu_canvases[7],
+    osu_canvases[8],
+    osu_canvases[9],
+    placeholder_canvases_map["cornell-001a-h"],
+    osu_canvases[10],
+    osu_canvases[11],
+    placeholder_canvases_map["psalm-107-108"],
+    cma_canvases[0],
+    osu_canvases[12],
+    osu_canvases[13],
+    placeholder_canvases_map["private-oh-1"],
+    osu_canvases[14],
+    osu_canvases[15],
+    placeholder_canvases_map["psalm-119-128"],
+    osu_canvases[16],
+    osu_canvases[17],
+    placeholder_canvases_map["psalm-135-145"],
+    placeholder_canvases_map["private-oh-2"],
+    osu_canvases[18],
+    osu_canvases[19],
+    osu_canvases[20],
+    osu_canvases[21],
+    placeholder_canvases_map["stanford-misc-2953"],
+    placeholder_canvases_map["osu-3a"],
+]
+
 combined = {
     "@context": "http://iiif.io/api/presentation/3/context.json",
     "id":   MANIFEST_ID,
@@ -304,8 +471,8 @@ combined = {
         "The Ohio State University); and a single decorated leaf with a historiated initial "
         "attributed to the Master of the Queen Mary Psalter (acc. 1999.125, "
         "The Cleveland Museum of Art). "
-        "25 canvases total. Latin psalter, circa 1290–1310, East Anglia, England, "
-        "possibly written for the church of St. Botolph at Iken in Suffolk."
+        "This manifest uses the reconstruction order from the Iken Psalter worksheet, "
+        "including placeholder canvases for missing folios and fragments that are not yet digitized."
     ]},
     "metadata": yale_meta + osu_meta_combined + cma_meta_combined,
     "requiredStatement": {
@@ -335,8 +502,7 @@ combined = {
     ],
     "thumbnail": yale.get("thumbnail", []),
     "start": {"id": yale_canvases[0]["id"], "type": "Canvas"},
-    # Reconstruction order: Yale, OSU 1–5, Cleveland, OSU 6–9
-    "items": yale_canvases + osu_canvases[:12] + cma_canvases + osu_canvases[12:],
+    "items": reconstruction_items,
     "structures": [],  # populated below
 }
 
@@ -371,18 +537,17 @@ yale_range = {
 }
 
 osu_folio_defs = [
-    ("1",    [2,  3]),
-    ("2",    [4,  5]),
-    ("3",    [6,  7]),
-    ("3.1",  [8,  9]),
-    ("4",    [10, 11]),
-    ("5",    [12, 13]),
-    # Cleveland canvas at index 14
-    ("6",    [15, 16]),
-    ("7",    [17, 18]),
-    ("7.10", [19, 20]),
-    ("8",    [21, 22]),
-    ("9",    [23, 24]),
+    ("1",    osu_canvases[0:2]),
+    ("2",    osu_canvases[2:4]),
+    ("3",    osu_canvases[4:6]),
+    ("3.1",  osu_canvases[6:8]),
+    ("4",    osu_canvases[8:10]),
+    ("5",    osu_canvases[10:12]),
+    ("6",    osu_canvases[12:14]),
+    ("7",    osu_canvases[14:16]),
+    ("7.10", osu_canvases[16:18]),
+    ("8",    osu_canvases[18:20]),
+    ("9",    osu_canvases[20:22]),
 ]
 
 osu_range = {
@@ -394,9 +559,9 @@ osu_range = {
             "id":    range_id(f"osu-folio-{folio.replace('.', '-')}"),
             "type":  "Range",
             "label": {"en": [f"Folio {folio} (SPEC.RARE.MS.MR.FRAG.60.{folio})"]},
-            "items": [canvas_ref(all_canvases[i]) for i in idxs],
+            "items": [canvas_ref(canvas) for canvas in canvases],
         }
-        for folio, idxs in osu_folio_defs
+        for folio, canvases in osu_folio_defs
     ],
 }
 
@@ -412,12 +577,27 @@ cma_range = {
     }],
 }
 
+placeholder_range = {
+    "id":    range_id("missing"),
+    "type":  "Range",
+    "label": {"en": ["Not yet digitized / missing fragments"]},
+    "items": [
+        {
+            "id":    range_id(f"missing-{fragment['slug']}"),
+            "type":  "Range",
+            "label": {"en": [fragment["label"]]},
+            "items": [canvas_ref(placeholder_canvases_map[fragment["slug"]])],
+        }
+        for fragment in MISSING_FRAGMENTS
+    ],
+}
+
 top_range = {
     "id":          range_id("top"),
     "type":        "Range",
     "label":       {"en": ["Iken Psalter Fragments"]},
     "viewingHint": "top",
-    "items":       [yale_range, osu_range, cma_range],
+    "items":       [yale_range, osu_range, cma_range, placeholder_range],
 }
 
 combined["structures"] = collect_ranges(top_range)
@@ -429,7 +609,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 total = len(combined["items"])
 print(f"Written: {OUTPUT_FILE}")
-print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)}, CMA: {len(cma_canvases)})")
+print(f"Total canvases: {total}  (Yale: {len(yale_canvases)}, OSU: {len(osu_canvases)}, CMA: {len(cma_canvases)}, placeholders: {len(placeholder_canvases)})")
 print("\nCanvas labels:")
 for c in combined["items"]:
     print(f"  {list(c['label'].values())[0][0]}")

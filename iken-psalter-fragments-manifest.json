@@ -9,7 +9,7 @@
   },
   "summary": {
     "en": [
-      "A combined presentation of Iken Psalter fragments held at three institutions: a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, Beinecke Library, Yale University); eleven parchment bifolium fragments (SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, The Ohio State University); and a single decorated leaf with a historiated initial attributed to the Master of the Queen Mary Psalter (acc. 1999.125, The Cleveland Museum of Art). 25 canvases total. Latin psalter, circa 1290–1310, East Anglia, England, possibly written for the church of St. Botolph at Iken in Suffolk."
+      "A combined presentation of Iken Psalter fragments held at three institutions: a drawing of King Edmund the Martyr with Middle English verse (Takamiya MS 136, Beinecke Library, Yale University); eleven parchment bifolium fragments (SPEC.RARE.MS.MR.FRAG.60.1–9, Rare Books and Manuscripts Library, The Ohio State University); and a single decorated leaf with a historiated initial attributed to the Master of the Queen Mary Psalter (acc. 1999.125, The Cleveland Museum of Art). This manifest uses the reconstruction order from the Iken Psalter worksheet, including placeholder canvases for missing folios and fragments that are not yet digitized."
     ]
   },
   "metadata": [
@@ -1157,6 +1157,73 @@
       ]
     },
     {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 1–36"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "Large missing opening containing the historiated initial at Psalm 26 (David pointing to his eye)."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%201%E2%80%9336",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%201%E2%80%9336",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/1831cz206",
       "type": "Canvas",
       "label": {
@@ -1285,6 +1352,207 @@
       ]
     },
     {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Cornell University Library fragment 80.052.002a–h (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A reconstructed Cornell quire believed to follow OSU folio 1 and precede Stanford MISC 1989."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Cornell%20University%20Library%20fragment%2080.052.002a%E2%80%93h%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Cornell%20University%20Library%20fragment%2080.052.002a%E2%80%93h%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 66–68"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "Historiated initial at Psalm 68 (David praying in the waters)."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2066%E2%80%9368",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2066%E2%80%9368",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Stanford University Libraries MISC 1989 (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A fragment held at Stanford University Libraries that is recognized as part of the Iken Psalter."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Stanford%20University%20Libraries%20MISC%201989%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Stanford%20University%20Libraries%20MISC%201989%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
       "type": "Canvas",
       "label": {
@@ -1409,6 +1677,73 @@
               "OSU Libraries permanent link (SPEC.RARE.MS.MR.FRAG.60.2)"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 71–85"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "Historiated initial at Psalm 80 (David playing carillon)."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2071%E2%80%9385",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%2071%E2%80%9385",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
         }
       ]
     },
@@ -1797,6 +2132,73 @@
       ]
     },
     {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Cornell University Library fragment 80.052.001a–h (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A reconstructed Cornell quire believed to follow OSU folio 4 and precede OSU folio 5."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Cornell%20University%20Library%20fragment%2080.052.001a%E2%80%93h%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Cornell%20University%20Library%20fragment%2080.052.001a%E2%80%93h%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/x059cm590",
       "type": "Canvas",
       "label": {
@@ -1921,6 +2323,73 @@
               "OSU Libraries permanent link (SPEC.RARE.MS.MR.FRAG.60.5)"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 107–108"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A short gap in the reconstructed sequence before the Cleveland leaf (1999.125)."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20107%E2%80%93108",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20107%E2%80%93108",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
         }
       ]
     },
@@ -2126,6 +2595,73 @@
       ]
     },
     {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Private Ohio collection fragment 1 (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A private Ohio Iken Psalter fragment believed to follow OSU folio 6."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Private%20Ohio%20collection%20fragment%201%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Private%20Ohio%20collection%20fragment%201%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/dv140656w",
       "type": "Canvas",
       "label": {
@@ -2254,6 +2790,73 @@
       ]
     },
     {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 119–128"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A large lacuna in the reconstructed sequence between OSU folio 7 and OSU folio 7.10."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20119%E2%80%93128",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20119%E2%80%93128",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
       "id": "https://library.osu.edu/dc/concern/file_sets/ff365j026",
       "type": "Canvas",
       "label": {
@@ -2378,6 +2981,140 @@
               "OSU Libraries permanent link (SPEC.RARE.MS.MR.FRAG.60.7.10)"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Missing Psalter folios 135–145"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A gap in the reconstructed sequence before the second private Ohio fragment."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20135%E2%80%93145",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Missing%20Psalter%20folios%20135%E2%80%93145",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Private Ohio collection fragment 2 (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A private Ohio Iken Psalter fragment that is recognized as part of the manuscript."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Private%20Ohio%20collection%20fragment%202%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Private%20Ohio%20collection%20fragment%202%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
         }
       ]
     },
@@ -2634,6 +3371,140 @@
               "OSU Libraries permanent link (SPEC.RARE.MS.MR.FRAG.60.9)"
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Stanford University Libraries MISC 2953 (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "A fragment held at Stanford University Libraries that is recognized as part of the Iken Psalter."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=Stanford%20University%20Libraries%20MISC%202953%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=Stanford%20University%20Libraries%20MISC%202953%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "OSU additional fragment MS MR.Frag.60.3a (not yet digitized)"
+        ]
+      },
+      "width": 1000,
+      "height": 1400,
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Status"
+            ]
+          },
+          "value": {
+            "en": [
+              "Not yet digitized"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "An additional OSU Iken Psalter fragment that is known from catalog records but does not yet have an available image manifest."
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a",
+              "body": {
+                "id": "https://via.placeholder.com/1000x1400.png?text=OSU%20additional%20fragment%20MS%20MR.Frag.60.3a%20%28not%20yet%20digitized%29",
+                "type": "Image",
+                "format": "image/png",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://via.placeholder.com/1000x1400.png?text=OSU%20additional%20fragment%20MS%20MR.Frag.60.3a%20%28not%20yet%20digitized%29",
+          "type": "Image",
+          "format": "image/png",
+          "width": 300,
+          "height": 420
         }
       ]
     }
@@ -2918,7 +3789,213 @@
               },
               "items": [
                 {
-                  "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+                  "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
+                  "type": "Canvas"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Not yet digitized / missing fragments"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-1-36",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 1–36"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-002a-h",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Cornell University Library fragment 80.052.002a–h (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-66-68",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 66–68"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-1989",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Stanford University Libraries MISC 1989 (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-71-85",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 71–85"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-001a-h",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Cornell University Library fragment 80.052.001a–h (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-107-108",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 107–108"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-1",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Private Ohio collection fragment 1 (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-119-128",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 119–128"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-135-145",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Missing Psalter folios 135–145"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-2",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Private Ohio collection fragment 2 (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-2953",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "Stanford University Libraries MISC 2953 (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953",
+                  "type": "Canvas"
+                }
+              ]
+            },
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-osu-3a",
+              "type": "Range",
+              "label": {
+                "en": [
+                  "OSU additional fragment MS MR.Frag.60.3a (not yet digitized)"
+                ]
+              },
+              "items": [
+                {
+                  "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a",
                   "type": "Canvas"
                 }
               ]
@@ -3424,7 +4501,7 @@
           },
           "items": [
             {
-              "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+              "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
               "type": "Canvas"
             }
           ]
@@ -3441,7 +4518,408 @@
       },
       "items": [
         {
-          "id": "https://iiif.archive.org/iiif/clevelandart-1999.125-leaf-from-a-psalter/canvas",
+          "id": "https://library.osu.edu/dc/concern/file_sets/h702qk01p",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Not yet digitized / missing fragments"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-1-36",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 1–36"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-002a-h",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Cornell University Library fragment 80.052.002a–h (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-66-68",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 66–68"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-1989",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Stanford University Libraries MISC 1989 (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-71-85",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 71–85"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-001a-h",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Cornell University Library fragment 80.052.001a–h (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-107-108",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 107–108"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-1",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Private Ohio collection fragment 1 (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-119-128",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 119–128"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-135-145",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Missing Psalter folios 135–145"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-2",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Private Ohio collection fragment 2 (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-2953",
+          "type": "Range",
+          "label": {
+            "en": [
+              "Stanford University Libraries MISC 2953 (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953",
+              "type": "Canvas"
+            }
+          ]
+        },
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-osu-3a",
+          "type": "Range",
+          "label": {
+            "en": [
+              "OSU additional fragment MS MR.Frag.60.3a (not yet digitized)"
+            ]
+          },
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a",
+              "type": "Canvas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-1-36",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 1–36"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-1-36",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-002a-h",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Cornell University Library fragment 80.052.002a–h (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-002a-h",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-66-68",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 66–68"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-66-68",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-1989",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Stanford University Libraries MISC 1989 (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-1989",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-71-85",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 71–85"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-71-85",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-cornell-001a-h",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Cornell University Library fragment 80.052.001a–h (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-cornell-001a-h",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-107-108",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 107–108"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-107-108",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-1",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Private Ohio collection fragment 1 (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-1",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-119-128",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 119–128"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-119-128",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-psalm-135-145",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Missing Psalter folios 135–145"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-psalm-135-145",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-private-oh-2",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Private Ohio collection fragment 2 (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-private-oh-2",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-stanford-misc-2953",
+      "type": "Range",
+      "label": {
+        "en": [
+          "Stanford University Libraries MISC 2953 (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-stanford-misc-2953",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json#range-missing-osu-3a",
+      "type": "Range",
+      "label": {
+        "en": [
+          "OSU additional fragment MS MR.Frag.60.3a (not yet digitized)"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/lauraw15/IkenPsalter/main/iken-psalter-fragments-manifest.json/canvas/missing-osu-3a",
           "type": "Canvas"
         }
       ]
