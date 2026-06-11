@@ -54,57 +54,57 @@ OSU_FILES = [
 MISSING_FRAGMENTS = [
     {
         "slug": "psalm-1-36",
-        "label": "Missing Psalter folios 1–36",
+        "label": "Missing Psalter folios 1–36 — Psalms 1–36",
         "description": "Large missing opening containing the historiated initial at Psalm 26 (David pointing to his eye).",
     },
     {
         "slug": "cornell-002a-h",
-        "label": "Cornell University Library fragment 80.052.002a–h (not yet digitized)",
+        "label": "Cornell University Library fragment 80.052.002a–h (not yet digitized) — Psalms 48–65",
         "description": "A reconstructed Cornell quire believed to follow OSU folio 1 and precede Stanford MISC 1989.",
     },
     {
         "slug": "psalm-66-68",
-        "label": "Missing Psalter folios 66–68",
+        "label": "Missing Psalter folios 66–68 — Psalms 66–68",
         "description": "Historiated initial at Psalm 68 (David praying in the waters).",
     },
     {
         "slug": "stanford-misc-1989",
-        "label": "Stanford University Libraries MISC 1989 (not yet digitized)",
+        "label": "Stanford University Libraries MISC 1989 (not yet digitized) — Psalms 68–69",
         "description": "A fragment held at Stanford University Libraries that is recognized as part of the Iken Psalter.",
     },
     {
         "slug": "psalm-71-85",
-        "label": "Missing Psalter folios 71–85",
+        "label": "Missing Psalter folios 71–85 — Psalms 71–85",
         "description": "Historiated initial at Psalm 80 (David playing carillon).",
     },
     {
         "slug": "cornell-001a-h",
-        "label": "Cornell University Library fragment 80.052.001a–h (not yet digitized)",
+        "label": "Cornell University Library fragment 80.052.001a–h (not yet digitized) — Psalms 89–104",
         "description": "A reconstructed Cornell quire believed to follow OSU folio 4 and precede OSU folio 5.",
     },
     {
         "slug": "psalm-107-108",
-        "label": "Missing Psalter folios 107–108",
+        "label": "Missing Psalter folios 107–108 — Psalms 107–108",
         "description": "A short gap in the reconstructed sequence before the Cleveland leaf (1999.125).",
     },
     {
         "slug": "private-oh-1",
-        "label": "Private Ohio collection fragment 1 (not yet digitized)",
+        "label": "Private Ohio collection fragment 1 (not yet digitized) — Psalms 113–117",
         "description": "A private Ohio Iken Psalter fragment believed to follow OSU folio 6.",
     },
     {
         "slug": "psalm-119-128",
-        "label": "Missing Psalter folios 119–128",
+        "label": "Missing Psalter folios 119–128 — Psalms 119–128",
         "description": "A large lacuna in the reconstructed sequence between OSU folio 7 and OSU folio 7.10.",
     },
     {
         "slug": "psalm-135-145",
-        "label": "Missing Psalter folios 135–145",
+        "label": "Missing Psalter folios 135–145 — Psalms 135–145",
         "description": "A gap in the reconstructed sequence before the second private Ohio fragment.",
     },
     {
         "slug": "private-oh-2",
-        "label": "Private Ohio collection fragment 2 (not yet digitized)",
+        "label": "Private Ohio collection fragment 2 (not yet digitized) — Psalms 146–150",
         "description": "A private Ohio Iken Psalter fragment that is recognized as part of the manuscript.",
     },
     {
@@ -455,7 +455,6 @@ reconstruction_items = [
     osu_canvases[20],
     osu_canvases[21],
     placeholder_canvases_map["stanford-misc-2953"],
-    placeholder_canvases_map["osu-3a"],
 ]
 
 combined = {
