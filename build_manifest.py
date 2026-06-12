@@ -451,8 +451,7 @@ def expand_fragment_canvases(fragment):
         start = int(m.group(1))
         end = int(m.group(2))
         for leaf in range(start, end + 1):
-            for side in SIDES:
-                canvases.append(make_placeholder_canvas(f"{slug}-leaf{leaf}-{side}", f"{label} — leaf {leaf}, {side}", desc))
+            canvases.append(make_placeholder_canvas(f"{slug}-leaf{leaf}", f"{label} — leaf {leaf}", desc))
         return canvases
 
     # Search for numeric ranges in slug (e.g. psalm-119-128)
@@ -461,8 +460,7 @@ def expand_fragment_canvases(fragment):
         start = int(m2.group(1))
         end = int(m2.group(2))
         for leaf in range(start, end + 1):
-            for side in SIDES:
-                canvases.append(make_placeholder_canvas(f"{slug}-leaf{leaf}-{side}", f"{label} — leaf {leaf}, {side}", desc))
+            canvases.append(make_placeholder_canvas(f"{slug}-leaf{leaf}", f"{label} — leaf {leaf}", desc))
         return canvases
 
     # Search for letter ranges after a base number (e.g. 001a–h or 001a-h)
@@ -473,11 +471,10 @@ def expand_fragment_canvases(fragment):
         end_ch = m3.group(3).lower()
         for code in range(ord(start_ch), ord(end_ch) + 1):
             suffix = chr(code)
-            for side in SIDES:
-                canvases.append(make_placeholder_canvas(f"{slug}-{base}{suffix}-{side}", f"{label} — {base}{suffix}, {side}", desc))
+            canvases.append(make_placeholder_canvas(f"{slug}-{base}{suffix}", f"{label} — {base}{suffix}", desc))
         return canvases
 
-    # Fallback: single placeholder canvas
+    # Fallback: single placeholder canvas per fragment/folio
     return [make_placeholder_canvas(slug, label, desc)]
 
 
