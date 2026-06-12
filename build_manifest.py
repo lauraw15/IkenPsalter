@@ -121,6 +121,12 @@ MISSING_FRAGMENTS = [
 
 OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 
+# Normalize certain fragment labels: use "Missing Psalter Folio" prefix
+for frag in MISSING_FRAGMENTS:
+    lbl = frag.get("label", "")
+    if lbl.startswith("Missing Psalter"):
+        frag["label"] = lbl.replace("Missing Psalter", "Missing Psalter Folio", 1)
+
 SIDES = ["recto", "verso"]
 
 BLANK_PAGE_IMAGE = "https://via.placeholder.com/1000x1400.png?text="
