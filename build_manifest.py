@@ -168,8 +168,19 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
         res = img["resource"]
         svc = res.get("service", {})
         svc_id = svc.get("@id", "")
+        # Some v2 manifests provide a resource '@id' that is already a full-image
+        # URL (contains '/full/' segments). If so, use it as-is; otherwise, if a
+        # service id is available, construct a full image URL from the service.
+        src_id = res.get('@id', '')
+        if '/full/' in src_id or src_id.endswith('.jpg') or src_id.endswith('.jp2'):
+            image_id = src_id
+        elif svc_id:
+            image_id = svc_id.rstrip('/') + '/full/full/0/default.jpg'
+        else:
+            image_id = src_id
+
         body = {
-            "id":     res["@id"] + "/full/full/0/default.jpg",
+            "id":     image_id,
             "type":   "Image",
             "format": res.get("format", "image/jpeg"),
             "width":  res.get("width", canvas_v2["width"]),
