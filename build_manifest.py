@@ -161,7 +161,11 @@ def osu_canvas_to_v3(folio, canvas_v2, canvas_idx):
     """
     canvas_id = canvas_v2["@id"]
     side = SIDES[canvas_idx]
-    label_str = f"osu-folio {folio}, {side}"
+    # Only prefix with 'osu-folio' for OSU numeric folio identifiers.
+    if re.match(r"^\d+(?:\.\d+)?$", str(folio)):
+        label_str = f"osu-folio {folio}, {side}"
+    else:
+        label_str = f"{folio}, {side}"
 
     anno_list = []
     for img in canvas_v2.get("images", []):
