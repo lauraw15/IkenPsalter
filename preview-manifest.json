@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "http://localhost:8000/preview-manifest.json",
+  "type": "Manifest",
+  "label": { "en": ["Missing Psalter Folio (leaves 1–36) — Psalms 1–36"] },
+  "items": [
+    {
+      "id": "http://localhost:8000/canvas/missing-psalm-1-36",
+      "type": "Canvas",
+      "label": { "none": ["Missing Psalter Folio (leaves 1–36) — Psalms 1–36"] },
+      "width": 1000,
+      "height": 1400,
+      "items": [
+        {
+          "id": "http://localhost:8000/canvas/missing-psalm-1-36/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost:8000/canvas/missing-psalm-1-36/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "http://localhost:8000/canvas/missing-psalm-1-36",
+              "body": {
+                "id": "placeholders/missing-psalm-1-36.svg",
+                "type": "Image",
+                "format": "image/svg+xml",
+                "width": 1000,
+                "height": 1400
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "placeholders/missing-psalm-1-36.svg",
+          "type": "Image",
+          "format": "image/svg+xml",
+          "width": 300,
+          "height": 420
+        }
+      ]
+    }
+  ]
+}
