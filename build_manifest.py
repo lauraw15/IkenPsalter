@@ -500,7 +500,16 @@ def expand_fragment_canvases(fragment):
                     if canvases:
                         for i, c in enumerate(canvases):
                             side = SIDES[i % 2]
-                            c['label'] = {"none": [f"{label}, {side}"]}
+                            display_label = label
+                            mslug = re.match(r"stanford-misc-(\d+)", slug)
+                            if mslug:
+                                call = f"MISC {mslug.group(1)}"
+                                if call not in label:
+                                    if label.startswith("Stanford University Libraries"):
+                                        display_label = label.replace("Stanford University Libraries", f"Stanford University Libraries ({call})", 1)
+                                    else:
+                                        display_label = f"{label} ({call})"
+                            c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
                 # If this is a v2 manifest, convert its canvases to v3 format
                 if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/2' in manifest.get('@context'):
@@ -512,7 +521,16 @@ def expand_fragment_canvases(fragment):
                     if canvases:
                         for i, c in enumerate(canvases):
                             side = SIDES[i % 2]
-                            c['label'] = {"none": [f"{label}, {side}"]}
+                            display_label = label
+                            mslug = re.match(r"stanford-misc-(\d+)", slug)
+                            if mslug:
+                                call = f"MISC {mslug.group(1)}"
+                                if call not in label:
+                                    if label.startswith("Stanford University Libraries"):
+                                        display_label = label.replace("Stanford University Libraries", f"Stanford University Libraries ({call})", 1)
+                                    else:
+                                        display_label = f"{label} ({call})"
+                            c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
         # If remote fetch failed, fall back to placeholder behaviour
 
