@@ -2167,162 +2167,6 @@
       ]
     },
     {
-      "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 1989 — Stanford University Libraries  — Psalms 68–69, recto"
-        ]
-      },
-      "width": 7812,
-      "height": 11103,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F5cfd4597-2904-42fe-beb2-a6c59fb842c0",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0003/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7812,
-                "height": 11103,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0003",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 1989 — Stanford University Libraries  — Psalms 68–69, verso"
-        ]
-      },
-      "width": 7812,
-      "height": 11103,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F9ecb6dc8-baa2-49c5-8f67-002220dabd06",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0004/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7812,
-                "height": 11103,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0004",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 1989 — Stanford University Libraries  — Psalms 68–69, recto"
-        ]
-      },
-      "width": 7677,
-      "height": 11751,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F46f3afbd-3bc0-4c64-a9b2-d33cc3d4d0fd",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0005/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7677,
-                "height": 11751,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0005",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 1989 — Stanford University Libraries  — Psalms 68–69, verso"
-        ]
-      },
-      "width": 7677,
-      "height": 11751,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fcb17e364-42bf-45f1-99bc-99fed3f5a369",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0006/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7677,
-                "height": 11751,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/sz746tg6023%2Fsz746tg6023_0006",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "https://library.osu.edu/dc/concern/file_sets/9306tb198",
       "type": "Canvas",
       "label": {
@@ -6968,162 +6812,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 2953 — Stanford University Libraries, recto"
-        ]
-      },
-      "width": 7676,
-      "height": 10997,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdeecced1-e5d2-4e5d-9949-6b510f358cf6",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0003/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7676,
-                "height": 10997,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0003",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 2953 — Stanford University Libraries, verso"
-        ]
-      },
-      "width": 7676,
-      "height": 10997,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F26f15714-86e5-4a4c-9cae-a2bbb89d189e",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0004/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 7676,
-                "height": 10997,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0004",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 2953 — Stanford University Libraries, recto"
-        ]
-      },
-      "width": 9078,
-      "height": 11832,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F9b317612-69ac-4d02-bbe0-2b20731062eb",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0005/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 9078,
-                "height": 11832,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0005",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6",
-      "type": "Canvas",
-      "label": {
-        "none": [
-          "MISC 2953 — Stanford University Libraries, verso"
-        ]
-      },
-      "width": 9078,
-      "height": 11832,
-      "items": [
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6/page",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2F28b6f820-682a-4f77-801a-b504d4faec6c",
-              "type": "Annotation",
-              "motivation": "painting",
-              "target": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6",
-              "body": {
-                "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0006/full/full/0/default.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "width": 9078,
-                "height": 11832,
-                "service": [
-                  {
-                    "id": "https://stacks.stanford.edu/image/iiif/vp788xm2948%2Fvp788xm2948_0006",
-                    "type": "ImageService2",
-                    "profile": "http://iiif.io/api/image/2/level2.json"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "structures": [
@@ -7519,22 +7207,6 @@
                 {
                   "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_2",
                   "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6",
-                  "type": "Canvas"
                 }
               ]
             },
@@ -7822,22 +7494,6 @@
                 },
                 {
                   "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_2",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5",
-                  "type": "Canvas"
-                },
-                {
-                  "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6",
                   "type": "Canvas"
                 }
               ]
@@ -8486,22 +8142,6 @@
             {
               "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_2",
               "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6",
-              "type": "Canvas"
             }
           ]
         },
@@ -8790,22 +8430,6 @@
             {
               "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_2",
               "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5",
-              "type": "Canvas"
-            },
-            {
-              "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6",
-              "type": "Canvas"
             }
           ]
         },
@@ -8922,22 +8546,6 @@
         },
         {
           "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_2",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_3",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_4",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_5",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_6",
           "type": "Canvas"
         }
       ]
@@ -9226,22 +8834,6 @@
         },
         {
           "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_2",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_3",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_4",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_5",
-          "type": "Canvas"
-        },
-        {
-          "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_6",
           "type": "Canvas"
         }
       ]

@@ -496,6 +496,9 @@ def expand_fragment_canvases(fragment):
                     items = manifest.get('items', [])
                     for it in items:
                         canvases.append(it)
+                    # If this is a Stanford external manifest, keep only first recto+verso
+                    if slug.startswith('stanford-misc') and len(canvases) > 2:
+                        canvases = canvases[:2]
                     # Normalize labels to the fragment human label + side where appropriate
                     if canvases:
                         for i, c in enumerate(canvases):
@@ -521,6 +524,9 @@ def expand_fragment_canvases(fragment):
                             # remote v2 manifests may contain long canvas lists; use parity
                             # to assign recto/verso labels (0=recto, 1=verso)
                             canvases.append(osu_canvas_to_v3(slug, canvas_v2, idx % 2))
+                    # If this is a Stanford external manifest, keep only first recto+verso
+                    if slug.startswith('stanford-misc') and len(canvases) > 2:
+                        canvases = canvases[:2]
                     if canvases:
                         for i, c in enumerate(canvases):
                             side = SIDES[i % 2]
