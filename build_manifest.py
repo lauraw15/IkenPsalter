@@ -510,9 +510,8 @@ def expand_fragment_canvases(fragment):
                             mslug = re.match(r"stanford-misc-(\d+)", slug)
                             display_label = label_no_call
                             if mslug:
-                                call = f"MISC {mslug.group(1)}"
-                                display_label = f"Stanford, {call}"
-                            c['label'] = {"none": [f"{display_label}, {side}"]}
+                                display_label = f"stanford-misc{mslug.group(1)}"
+                            c['label'] = {"none": [f"{display_label} {side}"]}
                         return canvases
                 # If this is a v2 manifest, convert its canvases to v3 format
                 if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/2' in manifest.get('@context'):
@@ -533,9 +532,8 @@ def expand_fragment_canvases(fragment):
                             mslug = re.match(r"stanford-misc-(\d+)", slug)
                             display_label = label_no_call
                             if mslug:
-                                call = f"MISC {mslug.group(1)}"
-                                display_label = f"Stanford, {call}"
-                            c['label'] = {"none": [f"{display_label}, {side}"]}
+                                display_label = f"stanford-misc{mslug.group(1)}"
+                            c['label'] = {"none": [f"{display_label} {side}"]}
                         return canvases
         # If remote fetch failed, fall back to placeholder behaviour
 
