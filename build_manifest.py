@@ -500,15 +500,18 @@ def expand_fragment_canvases(fragment):
                     if canvases:
                         for i, c in enumerate(canvases):
                             side = SIDES[i % 2]
-                            display_label = label
+                            # Clean label: remove '(not yet digitized)' and any existing MISC call
+                            label_clean = re.sub(r"\s*\(not yet digitized\)", "", label, flags=re.IGNORECASE).strip()
+                            label_no_call = re.sub(r"\bMISC\s*\d+\b", "", label_clean, flags=re.IGNORECASE).strip()
+                            label_no_call = re.sub(r"\s*[-–—]\s*$", "", label_no_call).strip()
                             mslug = re.match(r"stanford-misc-(\d+)", slug)
+                            display_label = label_no_call
                             if mslug:
                                 call = f"MISC {mslug.group(1)}"
-                                if call not in label:
-                                    if label.startswith("Stanford University Libraries"):
-                                        display_label = label.replace("Stanford University Libraries", f"Stanford University Libraries ({call})", 1)
-                                    else:
-                                        display_label = f"{label} ({call})"
+                                if label_no_call:
+                                    display_label = f"{call} — {label_no_call}"
+                                else:
+                                    display_label = call
                             c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
                 # If this is a v2 manifest, convert its canvases to v3 format
@@ -521,15 +524,17 @@ def expand_fragment_canvases(fragment):
                     if canvases:
                         for i, c in enumerate(canvases):
                             side = SIDES[i % 2]
-                            display_label = label
+                            label_clean = re.sub(r"\s*\(not yet digitized\)", "", label, flags=re.IGNORECASE).strip()
+                            label_no_call = re.sub(r"\bMISC\s*\d+\b", "", label_clean, flags=re.IGNORECASE).strip()
+                            label_no_call = re.sub(r"\s*[-–—]\s*$", "", label_no_call).strip()
                             mslug = re.match(r"stanford-misc-(\d+)", slug)
+                            display_label = label_no_call
                             if mslug:
                                 call = f"MISC {mslug.group(1)}"
-                                if call not in label:
-                                    if label.startswith("Stanford University Libraries"):
-                                        display_label = label.replace("Stanford University Libraries", f"Stanford University Libraries ({call})", 1)
-                                    else:
-                                        display_label = f"{label} ({call})"
+                                if label_no_call:
+                                    display_label = f"{call} — {label_no_call}"
+                                else:
+                                    display_label = call
                             c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
         # If remote fetch failed, fall back to placeholder behaviour
