@@ -494,10 +494,13 @@ def expand_fragment_canvases(fragment):
                 # If this is IIIF Presentation API v3, assume canvases live in manifest['items']
                 if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/3' in manifest.get('@context'):
                     items = manifest.get('items', [])
-                    # Adopt canvases as-is (ensure ids are absolute)
                     for it in items:
                         canvases.append(it)
+                    # Normalize labels to the fragment human label + side where appropriate
                     if canvases:
+                        for i, c in enumerate(canvases):
+                            side = SIDES[i % 2]
+                            c['label'] = {"none": [f"{label}, {side}"]}
                         return canvases
                 # If this is a v2 manifest, convert its canvases to v3 format
                 if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/2' in manifest.get('@context'):
@@ -507,6 +510,9 @@ def expand_fragment_canvases(fragment):
                             # to assign recto/verso labels (0=recto, 1=verso)
                             canvases.append(osu_canvas_to_v3(slug, canvas_v2, idx % 2))
                     if canvases:
+                        for i, c in enumerate(canvases):
+                            side = SIDES[i % 2]
+                            c['label'] = {"none": [f"{label}, {side}"]}
                         return canvases
         # If remote fetch failed, fall back to placeholder behaviour
 
