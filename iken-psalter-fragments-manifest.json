@@ -2092,7 +2092,7 @@
       "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_1",
       "type": "Canvas",
       "label": {
-        "none": [
+        "en": [
           "stanford-misc1989 recto"
         ]
       },
@@ -2131,7 +2131,7 @@
       "id": "https://purl.stanford.edu/sz746tg6023/iiif/canvas/cocina-fileSet-sz746tg6023-sz746tg6023_2",
       "type": "Canvas",
       "label": {
-        "none": [
+        "en": [
           "stanford-misc1989 verso"
         ]
       },
@@ -6739,7 +6739,7 @@
       "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_1",
       "type": "Canvas",
       "label": {
-        "none": [
+        "en": [
           "stanford-misc2953 recto"
         ]
       },
@@ -6778,7 +6778,7 @@
       "id": "https://purl.stanford.edu/vp788xm2948/iiif/canvas/cocina-fileSet-vp788xm2948-vp788xm2948_2",
       "type": "Canvas",
       "label": {
-        "none": [
+        "en": [
           "stanford-misc2953 verso"
         ]
       },
