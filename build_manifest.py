@@ -27,6 +27,8 @@ Notes:
 import json
 import re
 import urllib.parse
+import urllib.request
+import urllib.error
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -59,7 +61,7 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "cornell-002a-h",
-        "label": "Cornell University Library fragment 80.052.002a–h (not yet digitized) — Psalms 48–65",
+        "label": "Cornell University Library fragment 80.052.002a–h — Psalms 48–65",
         "description": "A reconstructed Cornell quire believed to follow OSU folio 1 and precede Stanford MISC 1989.",
     },
     {
@@ -79,7 +81,7 @@ MISSING_FRAGMENTS = [
     },
     {
         "slug": "cornell-001a-h",
-        "label": "Cornell University Library fragment 80.052.001a–h (not yet digitized) — Psalms 89–104",
+        "label": "Cornell University Library fragment 80.052.001a–h — Psalms 89–104",
         "description": "A reconstructed Cornell quire believed to follow OSU folio 4 and precede OSU folio 5.",
     },
     {
@@ -118,6 +120,14 @@ MISSING_FRAGMENTS = [
         "description": "An additional OSU Iken Psalter fragment that is known from catalog records but does not yet have an available image manifest.",
     },
 ]
+
+# Optional mapping of fragment slug -> external IIIF manifest or purl URL.
+# If provided, the build script will attempt to fetch the manifest and use
+# the canvases from that remote manifest instead of generating a placeholder.
+EXTERNAL_MANIFESTS = {
+    "stanford-misc-1989": "https://purl.stanford.edu/sz746tg6023",
+    "stanford-misc-2953": "https://purl.stanford.edu/vp788xm2948",
+}
 
 OUTPUT_FILE = "iken-psalter-fragments-manifest.json"
 
@@ -450,6 +460,46 @@ def expand_fragment_canvases(fragment):
     label = fragment.get("label", slug)
     desc = fragment.get("description", "")
     canvases = []
+
+    # If an external IIIF manifest or purl has been provided for this fragment,
+    # attempt to fetch it and use its canvases.
+    if slug in EXTERNAL_MANIFESTS:
+        base = EXTERNAL_MANIFESTS[slug]
+        # Candidate suffixes to try for IIIF manifest endpoints
+        candidates = ["/iiif/manifest.json", "/iiif/2/manifest.json", "/manifest.json", ""]
+        for suf in candidates:
+            url = urllib.parse.urljoin(base.rstrip('/') + '/', suf.lstrip('/'))
+            try:
+                with urllib.request.urlopen(url, timeout=10) as resp:
+                    data = resp.read().decode('utf-8')
+                manifest = json.loads(data)
+            except (urllib.error.URLError, ValueError):
+                manifest = None
+            if manifest:
+                # If this is IIIF Presentation API v3, assume canvases live in manifest['items']
+                if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/3' in manifest.get('@context'):
+                    items = manifest.get('items', [])
+                    # Adopt canvases as-is (ensure ids are absolute)
+                    for it in items:
+                        canvases.append(it)
+                    if canvases:
+                        return canvases
+                # If this is a v2 manifest, convert its canvases to v3 format
+                if isinstance(manifest, dict) and manifest.get('@context') and 'presentation/2' in manifest.get('@context'):
+                    for seq in manifest.get('sequences', []):
+                        for idx, canvas_v2 in enumerate(seq.get('canvases', [])):
+                            # remote v2 manifests may contain long canvas lists; use parity
+                            # to assign recto/verso labels (0=recto, 1=verso)
+                            canvases.append(osu_canvas_to_v3(slug, canvas_v2, idx % 2))
+                    if canvases:
+                        return canvases
+        # If remote fetch failed, fall back to placeholder behaviour
+
+    # Special-case: use a single placeholder canvas for Psalms 1-36
+    if slug == "psalm-1-36":
+        # Use concise label without leaf counts
+        single_label = "Missing Psalter, Psalms 1-36"
+        return [make_placeholder_canvas(slug, single_label, desc)]
 
     # Search for explicit 'leaves N–M' in label or description
     m = re.search(r"leaves?\s+(\d+)[–-](\d+)", (label + " " + desc))
