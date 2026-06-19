@@ -511,10 +511,7 @@ def expand_fragment_canvases(fragment):
                             display_label = label_no_call
                             if mslug:
                                 call = f"MISC {mslug.group(1)}"
-                                if label_no_call:
-                                    display_label = f"{call} — {label_no_call}"
-                                else:
-                                    display_label = call
+                                display_label = f"Stanford, {call}"
                             c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
                 # If this is a v2 manifest, convert its canvases to v3 format
@@ -537,10 +534,7 @@ def expand_fragment_canvases(fragment):
                             display_label = label_no_call
                             if mslug:
                                 call = f"MISC {mslug.group(1)}"
-                                if label_no_call:
-                                    display_label = f"{call} — {label_no_call}"
-                                else:
-                                    display_label = call
+                                display_label = f"Stanford, {call}"
                             c['label'] = {"none": [f"{display_label}, {side}"]}
                         return canvases
         # If remote fetch failed, fall back to placeholder behaviour
